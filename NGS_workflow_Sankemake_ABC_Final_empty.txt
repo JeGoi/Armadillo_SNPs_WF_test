@@ -1,11 +1,49 @@
 # Armadillo workflow
-# Note: Saved on 2017-08-28 01:09:19
-# Created on :2017-08-28 01:09:19
-# Modified on:2017-08-28 01:09:31
-# This file created on :2017-08-28 01:09:31
+# Note: Saved on 2017-08-28 14:32:11
+# Created on :2017-08-28 14:32:11
+# Modified on:2017-08-28 14:32:17
+# This file created on :2017-08-28 14:32:17
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
+ClassName=Not Set
+Connector0Conditional=True
+Connector0Output=True
+Connector1Conditional=True
+Connector1Output=True
+Connector2Conditional=True
+Connector2Output=True
+Connector3Conditional=True
+Connector3Output=True
+Description=Cluster Access informations
+EditorClassName=editors.ClusterEditor
+HelpSupplementary=
+InternalArmadilloApplication=true
+Keyword0=Cluster
+Name=Cluster
+NoThread=false
+Object=
+ObjectID=Cluster_1487943708
+ObjectType=Cluster
+Order=1
+Publication=NA
+SampleWorkflow=
+Tooltip=View Cluster information
+Type=SYS\: Comments
+VerifyExitValue=false
+WebServices=true
+Website=NA
+colorMode=BLUE
+defaultColor=BLUE
+filename=./src/configuration/CLUSTER.properties
+nbInput=0
+properties_id=1
+x=-25000.0
+y=0.0
+
+Object
+#
+#Mon Aug 28 14:32:17 EDT 2017
 ClassName=programs.bwa_mem
 Connector0Output=True
 Connector2=Fastq Pair-end
@@ -24,7 +62,7 @@ Name=bwa mem
 NoThread=false
 NormalExitValue=0
 Object=
-ObjectID=bwa mem_1487953594
+ObjectID=bwa mem_1487943604
 ObjectType=Program
 OneConnectorOnlyFor=4,2,3
 OutputOutputText=Connector0
@@ -41,18 +79,18 @@ debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>AO_AO1_t_JSpinnerValue<>1<>
 filename=./armadillo2-master/data/properties/bwa_mem.properties
-inputObject_fastafile_id40_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>122<_____>ObjectID<__->__>FastaFile_1487953569<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_fastqfile_id30_properties=FastqFile_____has_____14_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>314.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>192.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>102<_____>ObjectID<__->__>FastqFile_1487953589<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_fastafile_id40_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>23<_____>ObjectID<__->__>FastaFile_1487943583<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_fastqfile_id30_properties=FastqFile_____has_____14_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>314.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>192.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>5<_____>ObjectID<__->__>FastqFile_1487943601<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
 input_fastafile_id40=0
 input_fastqfile_id30=0
 nbInput=3
-properties_id=97
+properties_id=2
 x=298.0
 y=278.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 ClassName=programs.bwa_mem
 Connector0Output=True
 Connector2=Fastq Pair-end
@@ -71,7 +109,7 @@ Name=bwa mem
 NoThread=false
 NormalExitValue=0
 Object=
-ObjectID=bwa mem_1487953593
+ObjectID=bwa mem_1487943603
 ObjectType=Program
 OneConnectorOnlyFor=4,2,3
 OutputOutputText=Connector0
@@ -88,22 +126,22 @@ debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>AO_AO1_t_JSpinnerValue<>1<>
 filename=./armadillo2-master/data/properties/bwa_mem.properties
-inputObject_fastafile_id40_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>122<_____>ObjectID<__->__>FastaFile_1487953569<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_fastqfile_id30_properties=FastqFile_____has_____14_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>423.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>196.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>99<_____>ObjectID<__->__>FastqFile_1487953592<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_fastafile_id40_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>23<_____>ObjectID<__->__>FastaFile_1487943583<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_fastqfile_id30_properties=FastqFile_____has_____14_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>423.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>196.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>4<_____>ObjectID<__->__>FastqFile_1487943602<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
 input_fastafile_id40=0
 input_fastqfile_id30=0
 nbInput=3
-properties_id=98
+properties_id=3
 x=297.0
 y=388.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=FastqFile
 Object=
-ObjectID=FastqFile_1487953592
+ObjectID=FastqFile_1487943602
 ObjectType=Output
 OutputFastqFile=True
 colorMode=GREEN
@@ -111,17 +149,17 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=FastqFile
 output_fastqfile_id=0
-properties_id=99
+properties_id=4
 x=196.0
 y=423.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=FastqFile
 Object=
-ObjectID=FastqFile_1487953589
+ObjectID=FastqFile_1487943601
 ObjectType=Output
 OutputFastqFile=True
 colorMode=GREEN
@@ -129,17 +167,17 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=FastqFile
 output_fastqfile_id=0
-properties_id=100
+properties_id=5
 x=192.0
 y=314.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=FastqFile
 Object=
-ObjectID=FastqFile_1487953588
+ObjectID=FastqFile_1487943600
 ObjectType=Output
 OutputFastqFile=True
 colorMode=GREEN
@@ -147,17 +185,17 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=FastqFile
 output_fastqfile_id=0
-properties_id=101
+properties_id=6
 x=195.0
 y=202.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=SamFile
 Object=
-ObjectID=SamFile_1487953586
+ObjectID=SamFile_1487943599
 ObjectType=Output
 OutputSamFile=True
 colorMode=GREEN
@@ -165,17 +203,17 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=SamFile
 output_samfile_id=0
-properties_id=102
+properties_id=7
 x=476.0
 y=442.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=SamFile
 Object=
-ObjectID=SamFile_1487953585
+ObjectID=SamFile_1487943598
 ObjectType=Output
 OutputSamFile=True
 colorMode=GREEN
@@ -183,17 +221,17 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=SamFile
 output_samfile_id=0
-properties_id=103
+properties_id=8
 x=480.0
 y=332.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=SamFile
 Object=
-ObjectID=SamFile_1487953584
+ObjectID=SamFile_1487943597
 ObjectType=Output
 OutputSamFile=True
 colorMode=GREEN
@@ -201,13 +239,13 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=SamFile
 output_samfile_id=0
-properties_id=104
+properties_id=9
 x=479.0
 y=221.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 AO_AO1_S_box=true
 AO_AO1_b_box=true
 Advanced_Options=true
@@ -227,7 +265,7 @@ Name=samtools view
 NoThread=false
 NormalExitValue=0
 Object=
-ObjectID=samtools view_1487953583
+ObjectID=samtools view_1487943596
 ObjectType=Program
 OneConnectorOnlyFor=2
 OutputBamFile=Connector0
@@ -245,16 +283,16 @@ debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>
 filename=./armadillo2-master/data/properties/samtools_view.properties
-inputObject_samfile_id20_properties=SamFile_____has_____14_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>221.0<_____>x<__->__>479.0<_____>properties_id<__->__>107<_____>ObjectID<__->__>SamFile_1487953584<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
+inputObject_samfile_id20_properties=SamFile_____has_____14_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>221.0<_____>x<__->__>479.0<_____>properties_id<__->__>9<_____>ObjectID<__->__>SamFile_1487943597<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
 input_samfile_id20=0
 nbInput=1
-properties_id=105
+properties_id=10
 x=579.0
 y=167.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 AO_AO1_S_box=true
 AO_AO1_b_box=true
 Advanced_Options=true
@@ -274,7 +312,7 @@ Name=samtools view
 NoThread=false
 NormalExitValue=0
 Object=
-ObjectID=samtools view_1487953582
+ObjectID=samtools view_1487943595
 ObjectType=Program
 OneConnectorOnlyFor=2
 OutputBamFile=Connector0
@@ -292,16 +330,16 @@ debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>
 filename=./armadillo2-master/data/properties/samtools_view.properties
-inputObject_samfile_id20_properties=SamFile_____has_____14_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>332.0<_____>x<__->__>480.0<_____>properties_id<__->__>106<_____>ObjectID<__->__>SamFile_1487953585<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
+inputObject_samfile_id20_properties=SamFile_____has_____14_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>332.0<_____>x<__->__>480.0<_____>properties_id<__->__>8<_____>ObjectID<__->__>SamFile_1487943598<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
 input_samfile_id20=0
 nbInput=1
-properties_id=106
+properties_id=11
 x=580.0
 y=278.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 AO_AO1_S_box=true
 AO_AO1_b_box=true
 Advanced_Options=true
@@ -321,7 +359,7 @@ Name=samtools view
 NoThread=false
 NormalExitValue=0
 Object=
-ObjectID=samtools view_1487953581
+ObjectID=samtools view_1487943594
 ObjectType=Program
 OneConnectorOnlyFor=2
 OutputBamFile=Connector0
@@ -339,20 +377,20 @@ debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>
 filename=./armadillo2-master/data/properties/samtools_view.properties
-inputObject_samfile_id20_properties=SamFile_____has_____14_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>442.0<_____>x<__->__>476.0<_____>properties_id<__->__>105<_____>ObjectID<__->__>SamFile_1487953586<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
+inputObject_samfile_id20_properties=SamFile_____has_____14_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>442.0<_____>x<__->__>476.0<_____>properties_id<__->__>7<_____>ObjectID<__->__>SamFile_1487943599<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
 input_samfile_id20=0
 nbInput=1
-properties_id=107
+properties_id=12
 x=580.0
 y=388.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=BamFile
 Object=
-ObjectID=BamFile_1487953580
+ObjectID=BamFile_1487943593
 ObjectType=Output
 OutputBamFile=True
 colorMode=GREEN
@@ -360,17 +398,17 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=BamFile
 output_bamfile_id=0
-properties_id=108
+properties_id=13
 x=755.0
 y=221.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=BamFile
 Object=
-ObjectID=BamFile_1487953579
+ObjectID=BamFile_1487943592
 ObjectType=Output
 OutputBamFile=True
 colorMode=GREEN
@@ -378,17 +416,17 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=BamFile
 output_bamfile_id=0
-properties_id=109
+properties_id=14
 x=760.0
 y=332.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=BamFile
 Object=
-ObjectID=BamFile_1487953578
+ObjectID=BamFile_1487943591
 ObjectType=Output
 OutputBamFile=True
 colorMode=GREEN
@@ -396,13 +434,13 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=BamFile
 output_bamfile_id=0
-properties_id=110
+properties_id=15
 x=760.0
 y=442.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 AO_AO1_O_JComboBoxValue=bam
 AO_AO1_O_box=bam
 AO_AO1_T_JTextFieldValue=PREFIX
@@ -423,7 +461,7 @@ Name=samtools sort
 NoThread=false
 NormalExitValue=0
 Object=
-ObjectID=samtools sort_1487953577
+ObjectID=samtools sort_1487943590
 ObjectType=Program
 OneConnectorOnlyFor=2
 OutputBamFile=Connector0
@@ -442,16 +480,16 @@ debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>AO_AO1_T_JTextFieldValue<>PREFIX<>AO_AO1_O_JComboBoxValue<>bam<>
 filename=./armadillo2-master/data/properties/samtools_sort.properties
-inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>221.0<_____>OutputBamFile<__->__>True<_____>x<__->__>755.0<_____>properties_id<__->__>111<_____>ObjectID<__->__>BamFile_1487953580<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>221.0<_____>OutputBamFile<__->__>True<_____>x<__->__>755.0<_____>properties_id<__->__>13<_____>ObjectID<__->__>BamFile_1487943593<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
 input_bamfile_id20=0
 nbInput=1
-properties_id=111
+properties_id=16
 x=853.0
 y=167.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 AO_AO1_O_JComboBoxValue=bam
 AO_AO1_O_box=bam
 AO_AO1_T_JTextFieldValue=PREFIX
@@ -472,7 +510,7 @@ Name=samtools sort
 NoThread=false
 NormalExitValue=0
 Object=
-ObjectID=samtools sort_1487953576
+ObjectID=samtools sort_1487943589
 ObjectType=Program
 OneConnectorOnlyFor=2
 OutputBamFile=Connector0
@@ -491,16 +529,16 @@ debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>AO_AO1_T_JTextFieldValue<>PREFIX<>AO_AO1_O_JComboBoxValue<>bam<>
 filename=./armadillo2-master/data/properties/samtools_sort.properties
-inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>442.0<_____>OutputBamFile<__->__>True<_____>x<__->__>760.0<_____>properties_id<__->__>113<_____>ObjectID<__->__>BamFile_1487953578<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>442.0<_____>OutputBamFile<__->__>True<_____>x<__->__>760.0<_____>properties_id<__->__>15<_____>ObjectID<__->__>BamFile_1487943591<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
 input_bamfile_id20=0
 nbInput=1
-properties_id=112
+properties_id=17
 x=861.0
 y=388.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 AO_AO1_O_JComboBoxValue=bam
 AO_AO1_O_box=bam
 AO_AO1_T_JTextFieldValue=PREFIX
@@ -521,7 +559,7 @@ Name=samtools sort
 NoThread=false
 NormalExitValue=0
 Object=
-ObjectID=samtools sort_1487953575
+ObjectID=samtools sort_1487943588
 ObjectType=Program
 OneConnectorOnlyFor=2
 OutputBamFile=Connector0
@@ -540,20 +578,20 @@ debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>AO_AO1_T_JTextFieldValue<>PREFIX<>AO_AO1_O_JComboBoxValue<>bam<>
 filename=./armadillo2-master/data/properties/samtools_sort.properties
-inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>332.0<_____>OutputBamFile<__->__>True<_____>x<__->__>760.0<_____>properties_id<__->__>112<_____>ObjectID<__->__>BamFile_1487953579<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>332.0<_____>OutputBamFile<__->__>True<_____>x<__->__>760.0<_____>properties_id<__->__>14<_____>ObjectID<__->__>BamFile_1487943592<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
 input_bamfile_id20=0
 nbInput=1
-properties_id=113
+properties_id=18
 x=857.0
 y=278.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=BamFile
 Object=
-ObjectID=BamFile_1487953574
+ObjectID=BamFile_1487943587
 ObjectType=Output
 OutputBamFile=True
 colorMode=GREEN
@@ -561,17 +599,17 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=BamFile
 output_bamfile_id=0
-properties_id=114
+properties_id=19
 x=1023.0
 y=221.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=BamFile
 Object=
-ObjectID=BamFile_1487953573
+ObjectID=BamFile_1487943586
 ObjectType=Output
 OutputBamFile=True
 colorMode=GREEN
@@ -579,17 +617,17 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=BamFile
 output_bamfile_id=0
-properties_id=115
+properties_id=20
 x=1025.0
 y=331.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=BamFile
 Object=
-ObjectID=BamFile_1487953572
+ObjectID=BamFile_1487943585
 ObjectType=Output
 OutputBamFile=True
 colorMode=GREEN
@@ -597,13 +635,13 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=BamFile
 output_bamfile_id=0
-properties_id=116
+properties_id=21
 x=1030.0
 y=442.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 ClassName=programs.bwa_mem
 Connector0Output=True
 Connector2=Fastq Pair-end
@@ -622,7 +660,7 @@ Name=bwa mem
 NoThread=false
 NormalExitValue=0
 Object=
-ObjectID=bwa mem_1487953571
+ObjectID=bwa mem_1487943584
 ObjectType=Program
 OneConnectorOnlyFor=4,2,3
 OutputOutputText=Connector0
@@ -639,22 +677,22 @@ debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>AO_AO1_t_JSpinnerValue<>1<>
 filename=./armadillo2-master/data/properties/bwa_mem.properties
-inputObject_fastafile_id40_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>122<_____>ObjectID<__->__>FastaFile_1487953569<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_fastqfile_id30_properties=FastqFile_____has_____14_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>202.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>195.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>103<_____>ObjectID<__->__>FastqFile_1487953588<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_fastafile_id40_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>23<_____>ObjectID<__->__>FastaFile_1487943583<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_fastqfile_id30_properties=FastqFile_____has_____14_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>202.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>195.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>6<_____>ObjectID<__->__>FastqFile_1487943600<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
 input_fastafile_id40=0
 input_fastqfile_id30=0
 nbInput=3
-properties_id=117
+properties_id=22
 x=300.0
 y=167.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=FastaFile
 Object=
-ObjectID=FastaFile_1487953569
+ObjectID=FastaFile_1487943583
 ObjectType=Output
 OutputFastaFile=True
 colorMode=GREEN
@@ -662,17 +700,17 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=FastaFile
 output_fastafile_id=0
-properties_id=118
+properties_id=23
 x=192.0
 y=97.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
+#Mon Aug 28 14:32:17 EDT 2017
 Connector1Output=True
 Name=BCFFile
 Object=
-ObjectID=BCFFile_1487953568
+ObjectID=BCFFile_1487943582
 ObjectType=Output
 OutputBCFFile=True
 colorMode=GREEN
@@ -680,14 +718,246 @@ defaultColor=GREEN
 editorClass=editors.OutputEditor
 outputType=BCFFile
 output_bcffile_id=0
-properties_id=119
+properties_id=24
 x=1294.0
 y=116.0
 
 Object
 #
-#Mon Aug 28 01:09:31 EDT 2017
-AO_AO__illumina1DOT3PLUS_box=true
+#Mon Aug 28 14:32:17 EDT 2017
+AO_CVCO__multiallelicHYPHENSYMBOLcaller_box=true
+AO_FFO__outputHYPHENSYMBOLtype_JComboBoxValue=v
+AO_FFO__outputHYPHENSYMBOLtype_box=v
+AO_IOO__variantsHYPHENSYMBOLonly_box=true
+Advanced_Options=true
+ClassName=programs.bcftools_call
+Connector0Output=True
+Connector2=VCF, BCF
+Description=
+EditorClassName=editors.bcftools_callEditors
+Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableLinux=/usr/bin/docker
+ExecutableMacOSX=/usr/local/bin/docker
+HelpSupplementary=
+InputBCFFile=Connector2
+InputVCFFile=Connector2
+Name=bcftools call
+NoThread=false
+NormalExitValue=0
+Object=
+ObjectID=bcftools call_1487943580
+ObjectType=Program
+OneConnectorOnlyFor=2
+OutputBCFFile=Connector0
+OutputOutputText=Connector0
+OutputResults=Connector0
+OutputVCFFile=Connector0
+Publication=
+SolelyConnectors=2
+Type=NGS\: BCFTOOLS
+VerifyExitValue=false
+Version=1.3.1
+WebServices=
+Website=
+colorMode=ORANGE
+debug=false
+defaultColor=ORANGE
+defaultPgrmValues=Default_Options<>true<>AO_FFO__outputHYPHENSYMBOLtype_JComboBoxValue<>u<>
+filename=./armadillo2-master/data/properties/bcftools_call.properties
+inputObject_bcffile_id20_properties=BCFFile_____has_____14_____key(s)<_____>outputType<__->__>BCFFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BCFFile<_____>output_bcffile_id<__->__>0<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>116.0<_____>OutputBCFFile<__->__>True<_____>x<__->__>1294.0<_____>properties_id<__->__>24<_____>ObjectID<__->__>BCFFile_1487943582<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+input_bcffile_id20=0
+nbInput=1
+properties_id=25
+x=1393.0
+y=61.0
+
+Object
+#
+#Mon Aug 28 14:32:17 EDT 2017
+ClassName=programs.loadFiles2
+Connector0Output=True
+Connector1Conditional=True
+Description=Internal application to load a list of files into Armadillo.
+EditorClassName=editors.loadFiles2Editor
+HelpSupplementary=
+InputAncestor=True
+InputFile=Connector2
+InternalArmadilloApplication=true
+Keyword0=Load, Text File, Files,
+Name=Load Files Genome Reference
+NoThread=true
+Object=
+ObjectID=Load Files Genome Reference_1487943579
+ObjectType=Program
+OutputFastaFile=Connector0
+OutputFastqFile=Connector0
+OutputGenomeFile=Connector0
+OutputOutgroup=Connector0
+OutputResults=Connector0
+OutputSOLIDFile=Connector0
+OutputText=Connector0
+OutputTextFile=Connector0
+Publication=NA
+SampleWorkflow=LoadAllFile.properties.db
+Similar0=LoadAllFile.properties
+Similar1=LoadBlastDB.properties
+Similar2=LoadSequence.properties
+Similar3=LoadTree.properties
+Tooltip=Load File(s)
+Type=SYS\: Input
+VerifyExitValue=false
+WebServices=true
+Website=NA
+colorMode=BLUE
+debug=false
+defaultColor=BLUE
+filename=./armadillo2-master/data/properties/LoadFiles2.properties
+nbInput=0
+properties_id=26
+x=17.0
+y=44.0
+
+Object
+#
+#Mon Aug 28 14:32:17 EDT 2017
+ClassName=programs.loadFiles2
+Connector0Output=True
+Connector1Conditional=True
+Description=Internal application to load a list of files into Armadillo.
+EditorClassName=editors.loadFiles2Editor
+HelpSupplementary=
+InputAncestor=True
+InputFile=Connector2
+InternalArmadilloApplication=true
+Keyword0=Load, Text File, Files,
+Name=Load Files A Sample Fastq
+NoThread=true
+Object=
+ObjectID=Load Files A Sample Fastq_1487943578
+ObjectType=Program
+OutputFastaFile=Connector0
+OutputFastqFile=Connector0
+OutputGenomeFile=Connector0
+OutputOutgroup=Connector0
+OutputResults=Connector0
+OutputSOLIDFile=Connector0
+OutputText=Connector0
+OutputTextFile=Connector0
+Publication=NA
+SampleWorkflow=LoadAllFile.properties.db
+Similar0=LoadAllFile.properties
+Similar1=LoadBlastDB.properties
+Similar2=LoadSequence.properties
+Similar3=LoadTree.properties
+Tooltip=Load File(s)
+Type=SYS\: Input
+VerifyExitValue=false
+WebServices=true
+Website=NA
+colorMode=BLUE
+debug=false
+defaultColor=BLUE
+filename=./armadillo2-master/data/properties/LoadFiles2.properties
+nbInput=0
+properties_id=27
+x=17.0
+y=148.0
+
+Object
+#
+#Mon Aug 28 14:32:17 EDT 2017
+ClassName=programs.loadFiles2
+Connector0Output=True
+Connector1Conditional=True
+Description=Internal application to load a list of files into Armadillo.
+EditorClassName=editors.loadFiles2Editor
+HelpSupplementary=
+InputAncestor=True
+InputFile=Connector2
+InternalArmadilloApplication=true
+Keyword0=Load, Text File, Files,
+Name=Load Files B Sample Fastq
+NoThread=true
+Object=
+ObjectID=Load Files B Sample Fastq_1487943577
+ObjectType=Program
+OutputFastaFile=Connector0
+OutputFastqFile=Connector0
+OutputGenomeFile=Connector0
+OutputOutgroup=Connector0
+OutputResults=Connector0
+OutputSOLIDFile=Connector0
+OutputText=Connector0
+OutputTextFile=Connector0
+Publication=NA
+SampleWorkflow=LoadAllFile.properties.db
+Similar0=LoadAllFile.properties
+Similar1=LoadBlastDB.properties
+Similar2=LoadSequence.properties
+Similar3=LoadTree.properties
+Tooltip=Load File(s)
+Type=SYS\: Input
+VerifyExitValue=false
+WebServices=true
+Website=NA
+colorMode=BLUE
+debug=false
+defaultColor=BLUE
+filename=./armadillo2-master/data/properties/LoadFiles2.properties
+nbInput=0
+properties_id=28
+x=17.0
+y=260.0
+
+Object
+#
+#Mon Aug 28 14:32:17 EDT 2017
+ClassName=programs.loadFiles2
+Connector0Output=True
+Connector1Conditional=True
+Description=Internal application to load a list of files into Armadillo.
+EditorClassName=editors.loadFiles2Editor
+HelpSupplementary=
+InputAncestor=True
+InputFile=Connector2
+InternalArmadilloApplication=true
+Keyword0=Load, Text File, Files,
+Name=Load Files C Sample Fastq
+NoThread=true
+Object=
+ObjectID=Load Files C Sample Fastq_1487943576
+ObjectType=Program
+OutputFastaFile=Connector0
+OutputFastqFile=Connector0
+OutputGenomeFile=Connector0
+OutputOutgroup=Connector0
+OutputResults=Connector0
+OutputSOLIDFile=Connector0
+OutputText=Connector0
+OutputTextFile=Connector0
+Publication=NA
+SampleWorkflow=LoadAllFile.properties.db
+Similar0=LoadAllFile.properties
+Similar1=LoadBlastDB.properties
+Similar2=LoadSequence.properties
+Similar3=LoadTree.properties
+Tooltip=Load File(s)
+Type=SYS\: Input
+VerifyExitValue=false
+WebServices=true
+Website=NA
+colorMode=BLUE
+debug=false
+defaultColor=BLUE
+filename=./armadillo2-master/data/properties/LoadFiles2.properties
+nbInput=0
+properties_id=29
+x=16.0
+y=369.0
+
+Object
+#
+#Mon Aug 28 14:32:17 EDT 2017
 AO_OO__BCF_box=true
 Advanced_Options=true
 ClassName=programs.samtools_mpileup
@@ -709,7 +979,7 @@ Name=samtools mpileup
 NoThread=false
 NormalExitValue=0
 Object=
-ObjectID=samtools mpileup_1487953567
+ObjectID=samtools mpileup_1487943574
 ObjectType=Program
 OneConnectorOnlyFor=4,3
 OutputBCFFile=Connector0
@@ -728,591 +998,358 @@ debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>
 filename=./armadillo2-master/data/properties/samtools_mpileup.properties
-inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>221.0<_____>OutputBamFile<__->__>True<_____>x<__->__>1023.0<_____>properties_id<__->__>117<_____>ObjectID<__->__>BamFile_1487953574<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_bamfile_id21_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>331.0<_____>OutputBamFile<__->__>True<_____>x<__->__>1025.0<_____>properties_id<__->__>118<_____>ObjectID<__->__>BamFile_1487953573<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_bamfile_id22_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>442.0<_____>OutputBamFile<__->__>True<_____>x<__->__>1030.0<_____>properties_id<__->__>119<_____>ObjectID<__->__>BamFile_1487953572<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_fastafile_id30_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>122<_____>ObjectID<__->__>FastaFile_1487953569<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>221.0<_____>OutputBamFile<__->__>True<_____>x<__->__>1023.0<_____>properties_id<__->__>19<_____>ObjectID<__->__>BamFile_1487943587<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_bamfile_id21_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>331.0<_____>OutputBamFile<__->__>True<_____>x<__->__>1025.0<_____>properties_id<__->__>20<_____>ObjectID<__->__>BamFile_1487943586<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_bamfile_id22_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>442.0<_____>OutputBamFile<__->__>True<_____>x<__->__>1030.0<_____>properties_id<__->__>21<_____>ObjectID<__->__>BamFile_1487943585<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_fastafile_id30_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>23<_____>ObjectID<__->__>FastaFile_1487943583<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
 input_bamfile_id20=0
 input_bamfile_id21=0
 input_bamfile_id22=0
 input_fastafile_id30=0
 nbInput=3
-properties_id=120
+properties_id=30
 x=1117.0
 y=62.0
 
-Object
-#
-#Mon Aug 28 01:09:31 EDT 2017
-AO_CVCO__multiallelicHYPHENSYMBOLcaller_box=true
-AO_FFO__outputHYPHENSYMBOLtype_JComboBoxValue=v
-AO_FFO__outputHYPHENSYMBOLtype_box=v
-AO_IOO__variantsHYPHENSYMBOLonly_box=true
-Advanced_Options=true
-ClassName=programs.bcftools_call
-Connector0Output=True
-Connector2=VCF, BCF
-Description=
-EditorClassName=editors.bcftools_callEditors
-Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
-ExecutableLinux=/usr/bin/docker
-ExecutableMacOSX=/usr/local/bin/docker
-HelpSupplementary=
-InputBCFFile=Connector2
-InputVCFFile=Connector2
-Name=bcftools call
-NoThread=false
-NormalExitValue=0
-Object=
-ObjectID=bcftools call_1487953566
-ObjectType=Program
-OneConnectorOnlyFor=2
-OutputBCFFile=Connector0
-OutputOutputText=Connector0
-OutputResults=Connector0
-OutputVCFFile=Connector0
-Publication=
-SolelyConnectors=2
-Type=NGS\: BCFTOOLS
-VerifyExitValue=false
-Version=1.3.1
-WebServices=
-Website=
-colorMode=ORANGE
-debug=false
-defaultColor=ORANGE
-defaultPgrmValues=Default_Options<>true<>AO_FFO__outputHYPHENSYMBOLtype_JComboBoxValue<>u<>
-filename=./armadillo2-master/data/properties/bcftools_call.properties
-inputObject_bcffile_id20_properties=BCFFile_____has_____14_____key(s)<_____>outputType<__->__>BCFFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BCFFile<_____>output_bcffile_id<__->__>0<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>116.0<_____>OutputBCFFile<__->__>True<_____>x<__->__>1294.0<_____>properties_id<__->__>123<_____>ObjectID<__->__>BCFFile_1487953568<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-input_bcffile_id20=0
-nbInput=1
-properties_id=121
-x=1393.0
-y=61.0
-
-Object
-#
-#Mon Aug 28 01:09:31 EDT 2017
-ClassName=programs.loadFiles2
-Connector0Output=True
-Connector1Conditional=True
-Description=Internal application to load a list of files into Armadillo.
-EditorClassName=editors.loadFiles2Editor
-HelpSupplementary=
-InputAncestor=True
-InputFile=Connector2
-InternalArmadilloApplication=true
-Keyword0=Load, Text File, Files,
-Name=Load Files Genome Reference
-NoThread=true
-Object=
-ObjectID=Load Files 2.0_1487953460
-ObjectType=Program
-OutputFastaFile=Connector0
-OutputFastqFile=Connector0
-OutputGenomeFile=Connector0
-OutputOutgroup=Connector0
-OutputResults=Connector0
-OutputSOLIDFile=Connector0
-OutputText=Connector0
-OutputTextFile=Connector0
-Publication=NA
-SampleWorkflow=LoadAllFile.properties.db
-Similar0=LoadAllFile.properties
-Similar1=LoadBlastDB.properties
-Similar2=LoadSequence.properties
-Similar3=LoadTree.properties
-Tooltip=Load File(s)
-Type=SYS\: Input
-VerifyExitValue=false
-WebServices=true
-Website=NA
-colorMode=BLUE
-debug=false
-defaultColor=BLUE
-filename=./armadillo2-master/data/properties/LoadFiles2.properties
-nbInput=0
-properties_id=122
-x=17.0
-y=44.0
-
-Object
-#
-#Mon Aug 28 01:09:31 EDT 2017
-ClassName=programs.loadFiles2
-Connector0Output=True
-Connector1Conditional=True
-Description=Internal application to load a list of files into Armadillo.
-EditorClassName=editors.loadFiles2Editor
-HelpSupplementary=
-InputAncestor=True
-InputFile=Connector2
-InternalArmadilloApplication=true
-Keyword0=Load, Text File, Files,
-Name=Load Files A Sample Fastq
-NoThread=true
-Object=
-ObjectID=Load Files 2.0_1487953458
-ObjectType=Program
-OutputFastaFile=Connector0
-OutputFastqFile=Connector0
-OutputGenomeFile=Connector0
-OutputOutgroup=Connector0
-OutputResults=Connector0
-OutputSOLIDFile=Connector0
-OutputText=Connector0
-OutputTextFile=Connector0
-Publication=NA
-SampleWorkflow=LoadAllFile.properties.db
-Similar0=LoadAllFile.properties
-Similar1=LoadBlastDB.properties
-Similar2=LoadSequence.properties
-Similar3=LoadTree.properties
-Tooltip=Load File(s)
-Type=SYS\: Input
-VerifyExitValue=false
-WebServices=true
-Website=NA
-colorMode=BLUE
-debug=false
-defaultColor=BLUE
-filename=./armadillo2-master/data/properties/LoadFiles2.properties
-nbInput=0
-properties_id=123
-x=17.0
-y=148.0
-
-Object
-#
-#Mon Aug 28 01:09:31 EDT 2017
-ClassName=programs.loadFiles2
-Connector0Output=True
-Connector1Conditional=True
-Description=Internal application to load a list of files into Armadillo.
-EditorClassName=editors.loadFiles2Editor
-HelpSupplementary=
-InputAncestor=True
-InputFile=Connector2
-InternalArmadilloApplication=true
-Keyword0=Load, Text File, Files,
-Name=Load Files B Sample Fastq
-NoThread=true
-Object=
-ObjectID=Load Files 2.0_1487953456
-ObjectType=Program
-OutputFastaFile=Connector0
-OutputFastqFile=Connector0
-OutputGenomeFile=Connector0
-OutputOutgroup=Connector0
-OutputResults=Connector0
-OutputSOLIDFile=Connector0
-OutputText=Connector0
-OutputTextFile=Connector0
-Publication=NA
-SampleWorkflow=LoadAllFile.properties.db
-Similar0=LoadAllFile.properties
-Similar1=LoadBlastDB.properties
-Similar2=LoadSequence.properties
-Similar3=LoadTree.properties
-Tooltip=Load File(s)
-Type=SYS\: Input
-VerifyExitValue=false
-WebServices=true
-Website=NA
-colorMode=BLUE
-debug=false
-defaultColor=BLUE
-filename=./armadillo2-master/data/properties/LoadFiles2.properties
-nbInput=0
-properties_id=124
-x=17.0
-y=260.0
-
-Object
-#
-#Mon Aug 28 01:09:31 EDT 2017
-ClassName=programs.loadFiles2
-Connector0Output=True
-Connector1Conditional=True
-Description=Internal application to load a list of files into Armadillo.
-EditorClassName=editors.loadFiles2Editor
-HelpSupplementary=
-InputAncestor=True
-InputFile=Connector2
-InternalArmadilloApplication=true
-Keyword0=Load, Text File, Files,
-Name=Load Files C Sample Fastq
-NoThread=true
-Object=
-ObjectID=Load Files 2.0_1487953354
-ObjectType=Program
-OutputFastaFile=Connector0
-OutputFastqFile=Connector0
-OutputGenomeFile=Connector0
-OutputOutgroup=Connector0
-OutputResults=Connector0
-OutputSOLIDFile=Connector0
-OutputText=Connector0
-OutputTextFile=Connector0
-Publication=NA
-SampleWorkflow=LoadAllFile.properties.db
-Similar0=LoadAllFile.properties
-Similar1=LoadBlastDB.properties
-Similar2=LoadSequence.properties
-Similar3=LoadTree.properties
-Tooltip=Load File(s)
-Type=SYS\: Input
-VerifyExitValue=false
-WebServices=true
-Website=NA
-colorMode=BLUE
-debug=false
-defaultColor=BLUE
-filename=./armadillo2-master/data/properties/LoadFiles2.properties
-nbInput=0
-properties_id=125
-x=16.0
-y=369.0
-
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6974059
-dest_properties_id=99
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-13290187
+dest_properties_id=4
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=125
+source_properties_id=29
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6908266
-dest_properties_id=98
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-13224394
+dest_properties_id=3
 destination=3
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=99
+source_properties_id=4
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6842473
-dest_properties_id=100
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-13158601
+dest_properties_id=5
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=124
+source_properties_id=28
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6776680
-dest_properties_id=97
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-13092808
+dest_properties_id=2
 destination=3
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=100
+source_properties_id=5
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6710887
-dest_properties_id=101
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-13027015
+dest_properties_id=6
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=123
+source_properties_id=27
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6645094
-dest_properties_id=117
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12961222
+dest_properties_id=22
 destination=3
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=101
+source_properties_id=6
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6579301
-dest_properties_id=118
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12895429
+dest_properties_id=23
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=122
+source_properties_id=26
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6513508
-dest_properties_id=117
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12829636
+dest_properties_id=22
 destination=4
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=118
+source_properties_id=23
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6447715
-dest_properties_id=97
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12763843
+dest_properties_id=2
 destination=4
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=118
+source_properties_id=23
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6381922
-dest_properties_id=98
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12698050
+dest_properties_id=3
 destination=4
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=118
+source_properties_id=23
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6316129
-dest_properties_id=102
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12632257
+dest_properties_id=7
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=98
+source_properties_id=3
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6250336
-dest_properties_id=107
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12566464
+dest_properties_id=12
 destination=2
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=102
+source_properties_id=7
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6184543
-dest_properties_id=103
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12500671
+dest_properties_id=8
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=97
+source_properties_id=2
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6118750
-dest_properties_id=106
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12434878
+dest_properties_id=11
 destination=2
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=103
+source_properties_id=8
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-6052957
-dest_properties_id=104
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12369085
+dest_properties_id=9
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=117
+source_properties_id=22
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5987164
-dest_properties_id=105
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12303292
+dest_properties_id=10
 destination=2
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=104
+source_properties_id=9
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5921371
-dest_properties_id=108
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12237499
+dest_properties_id=13
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=105
+source_properties_id=10
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5855578
-dest_properties_id=111
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12171706
+dest_properties_id=16
 destination=2
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=108
+source_properties_id=13
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5789785
-dest_properties_id=109
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12105913
+dest_properties_id=14
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=106
+source_properties_id=11
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5723992
-dest_properties_id=113
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-12040120
+dest_properties_id=18
 destination=2
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=109
+source_properties_id=14
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5658199
-dest_properties_id=110
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-11974327
+dest_properties_id=15
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=107
+source_properties_id=12
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5592406
-dest_properties_id=112
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-11908534
+dest_properties_id=17
 destination=2
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=110
+source_properties_id=15
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5526613
-dest_properties_id=120
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-11842741
+dest_properties_id=30
 destination=3
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=118
+source_properties_id=23
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5460820
-dest_properties_id=114
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-11776948
+dest_properties_id=19
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=111
+source_properties_id=16
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5395027
-dest_properties_id=120
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-11711155
+dest_properties_id=30
 destination=2
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=114
+source_properties_id=19
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5329234
-dest_properties_id=115
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-11645362
+dest_properties_id=20
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=113
+source_properties_id=18
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5263441
-dest_properties_id=120
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-11579569
+dest_properties_id=30
 destination=2
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=115
+source_properties_id=20
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5197648
-dest_properties_id=116
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-11513776
+dest_properties_id=21
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=112
+source_properties_id=17
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5131855
-dest_properties_id=120
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-11447983
+dest_properties_id=30
 destination=2
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=116
+source_properties_id=21
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5066062
-dest_properties_id=119
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-11382190
+dest_properties_id=24
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=120
+source_properties_id=30
 
 Connector
 #
-#Mon Aug 28 01:09:31 EDT 2017
-Name=connector_-5000269
-dest_properties_id=121
+#Mon Aug 28 14:32:17 EDT 2017
+Name=connector_-11316397
+dest_properties_id=25
 destination=2
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=119
+source_properties_id=24
 
 
