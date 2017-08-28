@@ -15,7 +15,8 @@ $ sudo apt-get install docker.io git unzip \
 $ sudo usermod -aG docker $(whoami) \
 $ sudo reboot # logout/login is enougth \
 $ docker --version \
-You need an good answer
+You need a positive answer like \
+Docker version 17.05.0-ce, build 89658be
 
 A way to install and compile source is with netbeans. \
 $ sudo apt-get purge openjdk* \
