@@ -46,15 +46,23 @@ $ cd ./armadillo2 ; cp dist/Armadillo.jar Armadillo.jar ; java -jar Armadillo.ja
 
 Armadillo will start.
 
-Go to File/Open project \
+Go to File/New project \
+Save it \
+Go to File/Import Workflow in project \
 Select your home directory (second icon on right of path) \
 Choose Armadillo_SNPs_WF_test/NGS_workflow_Sankemake_AB_Final_empty.txt \
 or Armadillo_SNPs_WF_test/NGS_workflow_Sankemake_ABC_Final_empty.txt
+
+Save your workflow
 
 On the left side of the workflow, loading boxes are waiting. Double clic on them and choose the right file according the name box. \
 Genome file is in inputs/genome.fa \
 A fastq is in  inputs/samples/A.fastq \
 B fastq is in  inputs/samples/B.fastq \
 C fastq is in  inputs/samples/C.fastq
+
+Save your workflow
+
+Run it
 
 Enjoy.
