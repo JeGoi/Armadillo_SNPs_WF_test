@@ -7,6 +7,7 @@ in directory Snakemake / docs / tutorial / workflow / data /
 The Workflow is the equivalent of Snakemake Tutorial with few modification \
 All application exept Load Files are running with docker.
 
+## Prepare VM
 To test it you can use an ubuntu16.04 virtual machine \
 Open a terminal. \
 From your home directory, steps are : \
@@ -18,13 +19,13 @@ $ docker --version \
 You need a positive answer like \
 Docker version 17.05.0-ce, build 89658be
 
-Add depots \
+## Add depots
 $ git clone https://github.com/JeGoi/armadillo2.git  \
 $ git clone https://github.com/JeGoi/Armadillo_SNPs_WF_test.git \
 $ cd Armadillo_SNPs_WF_test ; unzip inputs.zip
 
-Compilation \
-A way to install and compile source is with netbeans. \
+## Compilation
+A GUI way to install and compile source is with netbeans. \
 $ sudo apt-get purge openjdk* \
 $ sudo add-apt-repository ppa:webupd8team/java \
 $ sudo apt-get update \
@@ -38,29 +39,36 @@ or add it later in the netbeans config file in ~/netbeans-8.1/etc/netbeans.conf 
 with : \
 netbeans_jdkhome="/usr/lib/jvm/java-8-oracle"
 
-If you don't use netbeans to compile, try with ant
-$ cd ~/armadillo2
-$ ant clean jar
-
 Run netbeans (icon on desktop), go to File/Open project Go to ~/ and select armadillo2 \
-Then go to Run/Clean&BuildProject
-
+Then go to Run/Clean&BuildProject\
 Wait until it's done
 
+OR \
+
+A CLI way is with ant \
+$ cd ~/armadillo2 \
+$ ant clean jar
+
+
+## Running after compile:
 Open a terminal \
 $ cd ~/armadillo2 ; cp dist/Armadillo.jar Armadillo.jar ; java -jar Armadillo.jar
 
 Armadillo will start.
 
+## Start the test:
+### Perpare the workflow
 Go to File/New project \
-Save it \
+- Create a new name \
+- Save it \
 Go to File/Import Workflow in project \
-Select your home directory (second icon on right of path) \
-Choose Armadillo_SNPs_WF_test/NGS_workflow_Sankemake_AB_Final_empty.txt \
-or Armadillo_SNPs_WF_test/NGS_workflow_Sankemake_ABC_Final_empty.txt
+- Select your home directory (second icon on right of path) \
+- Choose Armadillo_SNPs_WF_test/NGS_workflow_Sankemake_AB_Final_empty.txt \
+- or Armadillo_SNPs_WF_test/NGS_workflow_Sankemake_ABC_Final_empty.txt
 
 Save your workflow
 
+### Add files
 On the left side of the workflow, loading boxes are waiting. Double clic on them and choose the right file according the name box. \
 Genome file is in inputs/genome.fa \
 A fastq is in  inputs/samples/A.fastq \
@@ -69,12 +77,12 @@ C fastq is in  inputs/samples/C.fastq
 
 Save your workflow
 
-Run it
+### Run it
 
 Enjoy.
 
+## Steps to test Snakemake Tutorial on the same machine.
 
-Steps to test Snakemake Tutorial on the same machine.  \
 $ mkdir SnakeMakeTuto  \
 $ cd SnakeMakeTuto/  \
 $ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh  \
@@ -94,3 +102,5 @@ $ snakemake -s SnakeSource  \
 $ rm -rf calls/ mapped_reads/ sorted_reads/ .snakemake/ report.html   \
 ~ To exit from Sankemake environment  \
 $ source deactivate  
+
+Enjoy
