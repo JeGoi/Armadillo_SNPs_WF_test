@@ -66,3 +66,25 @@ Save your workflow
 Run it
 
 Enjoy.
+
+
+Steps to test Snakemake Tutorial on the same machine.  \
+$ mkdir SnakeMakeTuto  \
+$ cd SnakeMakeTuto/  \
+$ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh  \
+$ bash Miniconda3-latest-Linux-x86_64.sh   \
+$ conda install -c bioconda snakemake  \
+$ wget https://bitbucket.org/snakemake/snakemake-tutorial/get/v3.11.0.tar.bz2  \
+$ tar -xf v3.11.0.tar.bz2 --strip 1  \
+$ conda env create --name snakemake-tutorial --file environment.yaml  \
+$ mv ~/Armadillo_SNPs_WF_test/SnakeSource    ~/SnakeMakeTuto  \
+$ mv ~/Armadillo_SNPs_WF_test/SnakeArmadillo ~/SnakeMakeTuto  \
+$ source activate snakemake-tutorial  \
+~ To get Amadillo equivalent  \
+$ snakemake -s SnakeArmadillo   \
+~ To get Tutorial WorkFlow  \
+$ snakemake -s SnakeSource  \
+~ To remove everything and restart  \
+$ rm -rf calls/ mapped_reads/ sorted_reads/ .snakemake/ report.html   \
+~ To exit from Sankemake environment  \
+$ source deactivate  
