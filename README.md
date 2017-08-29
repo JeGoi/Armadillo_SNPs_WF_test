@@ -1,14 +1,14 @@
 # Armadillo_SNPs_WF_test
-Files for a SNPs workflow with docker applications
+Files for a SNPs workflow with docker in Armadillo caps
 
 Files came from https://bitbucket.org/snakemake/snakemake/ \
 in directory Snakemake / docs / tutorial / workflow / data /
 
-The Workflow is the equivalent of Snakemake Tutorial with few modification \
-All application exept Load Files are running with docker.
+The Workflow is the equivalent of Snakemake Tutorial with few modifications \
+All applications except Load Files are running with docker.
+To test it, you can use an ubuntu 16.04 in a virtual machine \
 
-## Prepare VM
-To test it you can use an ubuntu16.04 virtual machine \
+## Prepare your VM
 Open a terminal. \
 From your home directory, steps are : \
 $ sudo apt-get update \
