@@ -11,13 +11,19 @@ To test it you can use an ubuntu16.04 virtual machine \
 Open a terminal. \
 From your home directory, steps are : \
 $ sudo apt-get update \
-$ sudo apt-get install docker.io git unzip \
+$ sudo apt-get install docker.io git unzip ant \
 $ sudo usermod -aG docker $(whoami) \
 $ sudo reboot # logout/login is enougth \
 $ docker --version \
 You need a positive answer like \
 Docker version 17.05.0-ce, build 89658be
 
+Add depots \
+$ git clone https://github.com/JeGoi/armadillo2.git  \
+$ git clone https://github.com/JeGoi/Armadillo_SNPs_WF_test.git \
+$ cd Armadillo_SNPs_WF_test ; unzip inputs.zip
+
+Compilation \
 A way to install and compile source is with netbeans. \
 $ sudo apt-get purge openjdk* \
 $ sudo add-apt-repository ppa:webupd8team/java \
@@ -32,9 +38,9 @@ or add it later in the netbeans config file in ~/netbeans-8.1/etc/netbeans.conf 
 with : \
 netbeans_jdkhome="/usr/lib/jvm/java-8-oracle"
 
-$ git clone https://github.com/JeGoi/armadillo2.git  \
-$ git clone https://github.com/JeGoi/Armadillo_SNPs_WF_test.git \
-$ cd Armadillo_SNPs_WF_test ; unzip inputs.zip
+If you don't use netbeans to compile, try with ant
+$ cd ~/armadillo2
+$ ant clean jar
 
 Run netbeans (icon on desktop), go to File/Open project Go to ~/ and select armadillo2 \
 Then go to Run/Clean&BuildProject
@@ -42,7 +48,7 @@ Then go to Run/Clean&BuildProject
 Wait until it's done
 
 Open a terminal \
-$ cd ./armadillo2 ; cp dist/Armadillo.jar Armadillo.jar ; java -jar Armadillo.jar
+$ cd ~/armadillo2 ; cp dist/Armadillo.jar Armadillo.jar ; java -jar Armadillo.jar
 
 Armadillo will start.
 
