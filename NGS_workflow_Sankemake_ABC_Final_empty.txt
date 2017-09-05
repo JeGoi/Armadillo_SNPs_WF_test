@@ -1,11 +1,11 @@
 # Armadillo workflow
-# Note: Saved on 2017-08-28 14:32:11
-# Created on :2017-08-28 14:32:11
-# Modified on:2017-08-28 14:32:17
-# This file created on :2017-08-28 14:32:17
+# Note: Saved on 2017-09-04 22:39:08
+# Created on :2017-09-04 22:39:08
+# Modified on:2017-09-04 22:39:53
+# This file created on :2017-09-04 22:39:53
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
+#Mon Sep 04 22:39:53 EDT 2017
 ClassName=Not Set
 Connector0Conditional=True
 Connector0Output=True
@@ -22,10 +22,8 @@ InternalArmadilloApplication=true
 Keyword0=Cluster
 Name=Cluster
 NoThread=false
-Object=
-ObjectID=Cluster_1487943708
+ObjectID=Cluster_408103106
 ObjectType=Cluster
-Order=1
 Publication=NA
 SampleWorkflow=
 Tooltip=View Cluster information
@@ -43,8 +41,9 @@ y=0.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
+#Mon Sep 04 22:39:53 EDT 2017
 ClassName=programs.bwa_mem
+ClusterProgramName=bwa
 Connector0Output=True
 Connector2=Fastq Pair-end
 Connector3=Fastq
@@ -52,6 +51,8 @@ Connector4=Genome Ref, (Fasta)
 Description=
 EditorClassName=editors.bwa_memEditors
 Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableCluster=bwa mem
+ExecutableDocker=bwa mem
 ExecutableLinux=/usr/bin/docker
 ExecutableMacOSX=/usr/local/bin/docker
 HelpSupplementary=BWA-MEM is an algorithms of BWA. BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
@@ -61,37 +62,37 @@ InputGenomeFile=Connector4
 Name=bwa mem
 NoThread=false
 NormalExitValue=0
-Object=
-ObjectID=bwa mem_1487943604
+ObjectID=bwa mem_408103219
 ObjectType=Program
 OneConnectorOnlyFor=4,2,3
 OutputOutputText=Connector0
 OutputResults=Connector0
 OutputSamFile=Connector0
 Publication=
-Type=NGS\: 
+Type=NGS\: Mapping
 VerifyExitValue=false
-Version=1.3.1
+Version=0.7.12
 WebServices=
 Website=
 colorMode=ORANGE
 debug=false
 defaultColor=ORANGE
-defaultPgrmValues=Default_Options<>true<>AO_AO1_t_JSpinnerValue<>1<>
-filename=./armadillo2-master/data/properties/bwa_mem.properties
-inputObject_fastafile_id40_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>23<_____>ObjectID<__->__>FastaFile_1487943583<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_fastqfile_id30_properties=FastqFile_____has_____14_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>314.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>192.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>5<_____>ObjectID<__->__>FastqFile_1487943601<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+defaultPgrmValues=Default_Options<>true<>AO_AO1_t_JSpinnerValue<>1
+filename=/home/truc/test/armadillo2/data/properties/bwa_mem.properties
+inputObject_fastafile_id40_properties=FastaFile_____has_____13_____key(s)<_____>outputType<__->__>FastaFile<_____>defaultColor<__->__>GREEN<_____>OutputFastaFile<__->__>True<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_fastafile_id<__->__>0<_____>y<__->__>116.0<_____>x<__->__>120.0<_____>properties_id<__->__>11<_____>ObjectID<__->__>FastaFile_408104059<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_fastqfile_id30_properties=FastqFile_____has_____13_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>y<__->__>334.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>123.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>8<_____>ObjectID<__->__>FastqFile_408104057<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
 input_fastafile_id40=0
 input_fastqfile_id30=0
 nbInput=3
 properties_id=2
-x=298.0
-y=278.0
+x=260.0
+y=274.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
+#Mon Sep 04 22:39:53 EDT 2017
 ClassName=programs.bwa_mem
+ClusterProgramName=bwa
 Connector0Output=True
 Connector2=Fastq Pair-end
 Connector3=Fastq
@@ -99,6 +100,8 @@ Connector4=Genome Ref, (Fasta)
 Description=
 EditorClassName=editors.bwa_memEditors
 Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableCluster=bwa mem
+ExecutableDocker=bwa mem
 ExecutableLinux=/usr/bin/docker
 ExecutableMacOSX=/usr/local/bin/docker
 HelpSupplementary=BWA-MEM is an algorithms of BWA. BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
@@ -108,94 +111,123 @@ InputGenomeFile=Connector4
 Name=bwa mem
 NoThread=false
 NormalExitValue=0
-Object=
-ObjectID=bwa mem_1487943603
+ObjectID=bwa mem_408103221
 ObjectType=Program
 OneConnectorOnlyFor=4,2,3
 OutputOutputText=Connector0
 OutputResults=Connector0
 OutputSamFile=Connector0
 Publication=
-Type=NGS\: 
+Type=NGS\: Mapping
 VerifyExitValue=false
-Version=1.3.1
+Version=0.7.12
 WebServices=
 Website=
 colorMode=ORANGE
 debug=false
 defaultColor=ORANGE
-defaultPgrmValues=Default_Options<>true<>AO_AO1_t_JSpinnerValue<>1<>
-filename=./armadillo2-master/data/properties/bwa_mem.properties
-inputObject_fastafile_id40_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>23<_____>ObjectID<__->__>FastaFile_1487943583<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_fastqfile_id30_properties=FastqFile_____has_____14_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>423.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>196.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>4<_____>ObjectID<__->__>FastqFile_1487943602<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+defaultPgrmValues=Default_Options<>true<>AO_AO1_t_JSpinnerValue<>1
+filename=/home/truc/test/armadillo2/data/properties/bwa_mem.properties
+inputObject_fastafile_id40_properties=FastaFile_____has_____13_____key(s)<_____>outputType<__->__>FastaFile<_____>defaultColor<__->__>GREEN<_____>OutputFastaFile<__->__>True<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_fastafile_id<__->__>0<_____>y<__->__>116.0<_____>x<__->__>120.0<_____>properties_id<__->__>11<_____>ObjectID<__->__>FastaFile_408104059<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_fastqfile_id30_properties=FastqFile_____has_____13_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>y<__->__>453.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>120.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>6<_____>ObjectID<__->__>FastqFile_408103956<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
 input_fastafile_id40=0
 input_fastqfile_id30=0
 nbInput=3
 properties_id=3
-x=297.0
-y=388.0
+x=259.0
+y=387.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=FastqFile
-Object=
-ObjectID=FastqFile_1487943602
-ObjectType=Output
-OutputFastqFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=FastqFile
-output_fastqfile_id=0
+#Mon Sep 04 22:39:53 EDT 2017
+AO_AO1_t_JSpinnerValue=1
+ClassName=programs.bwa_mem
+ClusterProgramName=bwa
+Connector0Output=True
+Connector2=Fastq Pair-end
+Connector3=Fastq
+Connector4=Genome Ref, (Fasta)
+Default_Options=true
+Description=
+EditorClassName=editors.bwa_memEditors
+Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableCluster=bwa mem
+ExecutableDocker=bwa mem
+ExecutableLinux=/usr/bin/docker
+ExecutableMacOSX=/usr/local/bin/docker
+HelpSupplementary=BWA-MEM is an algorithms of BWA. BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
+InputFastaFile=Connector4
+InputFastqFile=Connector3
+InputGenomeFile=Connector4
+Name=bwa mem
+NoThread=false
+NormalExitValue=0
+ObjectID=bwa mem_408103234
+ObjectType=Program
+OneConnectorOnlyFor=4,2,3
+OutputOutputText=Connector0
+OutputResults=Connector0
+OutputSamFile=Connector0
+Publication=
+Type=NGS\: Mapping
+VerifyExitValue=false
+Version=0.7.12
+WebServices=
+Website=
+colorMode=ORANGE
+debug=false
+defaultColor=ORANGE
+defaultPgrmValues=Default_Options<>true<>AO_AO1_t_JSpinnerValue<>1
+filename=/home/truc/test/armadillo2/data/properties/bwa_mem.properties
+inputObject_fastafile_id40_properties=FastaFile_____has_____13_____key(s)<_____>outputType<__->__>FastaFile<_____>defaultColor<__->__>GREEN<_____>OutputFastaFile<__->__>True<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_fastafile_id<__->__>0<_____>y<__->__>116.0<_____>x<__->__>120.0<_____>properties_id<__->__>11<_____>ObjectID<__->__>FastaFile_408104059<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_fastqfile_id30_properties=FastqFile_____has_____13_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>y<__->__>218.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>118.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>10<_____>ObjectID<__->__>FastqFile_408104058<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+input_fastafile_id40=0
+input_fastqfile_id30=0
+nbInput=3
 properties_id=4
-x=196.0
-y=423.0
+x=262.0
+y=161.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=FastqFile
-Object=
-ObjectID=FastqFile_1487943601
-ObjectType=Output
-OutputFastqFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=FastqFile
-output_fastqfile_id=0
-properties_id=5
-x=192.0
-y=314.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=FastqFile
-Object=
-ObjectID=FastqFile_1487943600
-ObjectType=Output
-OutputFastqFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=FastqFile
-output_fastqfile_id=0
-properties_id=6
-x=195.0
-y=202.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
+#Mon Sep 04 22:39:53 EDT 2017
 Connector1Output=True
 Name=SamFile
-Object=
-ObjectID=SamFile_1487943599
+ObjectID=SamFile_408103705
+ObjectType=Output
+OutputSamFile=True
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=SamFile
+output_samfile_id=0
+properties_id=5
+x=367.0
+y=328.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=SamFile
+ObjectID=SamFile_408103707
+ObjectType=Output
+OutputSamFile=True
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=SamFile
+output_samfile_id=0
+properties_id=6
+x=365.0
+y=216.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=SamFile
+ObjectID=SamFile_408103709
 ObjectType=Output
 OutputSamFile=True
 colorMode=GREEN
@@ -204,57 +236,24 @@ editorClass=editors.OutputEditor
 outputType=SamFile
 output_samfile_id=0
 properties_id=7
-x=476.0
-y=442.0
+x=358.0
+y=439.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=SamFile
-Object=
-ObjectID=SamFile_1487943598
-ObjectType=Output
-OutputSamFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=SamFile
-output_samfile_id=0
-properties_id=8
-x=480.0
-y=332.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=SamFile
-Object=
-ObjectID=SamFile_1487943597
-ObjectType=Output
-OutputSamFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=SamFile
-output_samfile_id=0
-properties_id=9
-x=479.0
-y=221.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
+#Mon Sep 04 22:39:53 EDT 2017
 AO_AO1_S_box=true
 AO_AO1_b_box=true
 Advanced_Options=true
 ClassName=programs.samtools_view
+ClusterProgramName=samtools
 Connector0Output=True
 Connector2=Sam, Bam, Cram File
 Description=
 EditorClassName=editors.samtools_viewEditors
 Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableCluster=samtools view
+ExecutableDocker=samtools view
 ExecutableLinux=/usr/bin/docker
 ExecutableMacOSX=/usr/local/bin/docker
 HelpSupplementary=With no options or regions specified, prints all alignments in the specified input alignment file (in SAM, BAM, or CRAM format) to standard output in SAM format (with no header).
@@ -264,8 +263,7 @@ InputSamFile=Connector2
 Name=samtools view
 NoThread=false
 NormalExitValue=0
-Object=
-ObjectID=samtools view_1487943596
+ObjectID=samtools view_408103710
 ObjectType=Program
 OneConnectorOnlyFor=2
 OutputBamFile=Connector0
@@ -275,122 +273,161 @@ OutputSamFile=Connector0
 Publication=
 Type=NGS\: SAMTOOLS
 VerifyExitValue=false
-Version=1.3.1
+Version=1.3.2
 WebServices=
 Website=
 colorMode=ORANGE
 debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>
-filename=./armadillo2-master/data/properties/samtools_view.properties
-inputObject_samfile_id20_properties=SamFile_____has_____14_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>221.0<_____>x<__->__>479.0<_____>properties_id<__->__>9<_____>ObjectID<__->__>SamFile_1487943597<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
+filename=/home/truc/test/armadillo2/data/properties/samtools_view.properties
+inputObject_samfile_id20_properties=SamFile_____has_____12_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>y<__->__>328.0<_____>x<__->__>367.0<_____>ObjectID<__->__>SamFile_408103705<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
+input_samfile_id20=0
+nbInput=1
+properties_id=8
+x=466.0
+y=274.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=BamFile
+ObjectID=BamFile_408103711
+ObjectType=Output
+OutputBamFile=True
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=BamFile
+output_bamfile_id=0
+properties_id=9
+x=574.0
+y=327.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+AO_AO1_S_box=true
+AO_AO1_b_box=true
+Advanced_Options=true
+ClassName=programs.samtools_view
+ClusterProgramName=samtools
+Connector0Output=True
+Connector2=Sam, Bam, Cram File
+Description=
+EditorClassName=editors.samtools_viewEditors
+Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableCluster=samtools view
+ExecutableDocker=samtools view
+ExecutableLinux=/usr/bin/docker
+ExecutableMacOSX=/usr/local/bin/docker
+HelpSupplementary=With no options or regions specified, prints all alignments in the specified input alignment file (in SAM, BAM, or CRAM format) to standard output in SAM format (with no header).
+InputBamFile=Connector2
+InputCramFile=Connector2
+InputSamFile=Connector2
+Name=samtools view
+NoThread=false
+NormalExitValue=0
+ObjectID=samtools view_408103818
+ObjectType=Program
+OneConnectorOnlyFor=2
+OutputBamFile=Connector0
+OutputOutputText=Connector0
+OutputResults=Connector0
+OutputSamFile=Connector0
+Publication=
+Type=NGS\: SAMTOOLS
+VerifyExitValue=false
+Version=1.3.2
+WebServices=
+Website=
+colorMode=ORANGE
+debug=false
+defaultColor=ORANGE
+defaultPgrmValues=Default_Options<>true<>
+filename=/home/truc/test/armadillo2/data/properties/samtools_view.properties
+inputObject_samfile_id20_properties=SamFile_____has_____12_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>y<__->__>216.0<_____>x<__->__>365.0<_____>ObjectID<__->__>SamFile_408103707<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
 input_samfile_id20=0
 nbInput=1
 properties_id=10
-x=579.0
-y=167.0
+x=460.0
+y=161.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
-AO_AO1_S_box=true
-AO_AO1_b_box=true
-Advanced_Options=true
-ClassName=programs.samtools_view
-Connector0Output=True
-Connector2=Sam, Bam, Cram File
-Description=
-EditorClassName=editors.samtools_viewEditors
-Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
-ExecutableLinux=/usr/bin/docker
-ExecutableMacOSX=/usr/local/bin/docker
-HelpSupplementary=With no options or regions specified, prints all alignments in the specified input alignment file (in SAM, BAM, or CRAM format) to standard output in SAM format (with no header).
-InputBamFile=Connector2
-InputCramFile=Connector2
-InputSamFile=Connector2
-Name=samtools view
-NoThread=false
-NormalExitValue=0
-Object=
-ObjectID=samtools view_1487943595
-ObjectType=Program
-OneConnectorOnlyFor=2
-OutputBamFile=Connector0
-OutputOutputText=Connector0
-OutputResults=Connector0
-OutputSamFile=Connector0
-Publication=
-Type=NGS\: SAMTOOLS
-VerifyExitValue=false
-Version=1.3.1
-WebServices=
-Website=
-colorMode=ORANGE
-debug=false
-defaultColor=ORANGE
-defaultPgrmValues=Default_Options<>true<>
-filename=./armadillo2-master/data/properties/samtools_view.properties
-inputObject_samfile_id20_properties=SamFile_____has_____14_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>332.0<_____>x<__->__>480.0<_____>properties_id<__->__>8<_____>ObjectID<__->__>SamFile_1487943598<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
-input_samfile_id20=0
-nbInput=1
-properties_id=11
-x=580.0
-y=278.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-AO_AO1_S_box=true
-AO_AO1_b_box=true
-Advanced_Options=true
-ClassName=programs.samtools_view
-Connector0Output=True
-Connector2=Sam, Bam, Cram File
-Description=
-EditorClassName=editors.samtools_viewEditors
-Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
-ExecutableLinux=/usr/bin/docker
-ExecutableMacOSX=/usr/local/bin/docker
-HelpSupplementary=With no options or regions specified, prints all alignments in the specified input alignment file (in SAM, BAM, or CRAM format) to standard output in SAM format (with no header).
-InputBamFile=Connector2
-InputCramFile=Connector2
-InputSamFile=Connector2
-Name=samtools view
-NoThread=false
-NormalExitValue=0
-Object=
-ObjectID=samtools view_1487943594
-ObjectType=Program
-OneConnectorOnlyFor=2
-OutputBamFile=Connector0
-OutputOutputText=Connector0
-OutputResults=Connector0
-OutputSamFile=Connector0
-Publication=
-Type=NGS\: SAMTOOLS
-VerifyExitValue=false
-Version=1.3.1
-WebServices=
-Website=
-colorMode=ORANGE
-debug=false
-defaultColor=ORANGE
-defaultPgrmValues=Default_Options<>true<>
-filename=./armadillo2-master/data/properties/samtools_view.properties
-inputObject_samfile_id20_properties=SamFile_____has_____14_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>442.0<_____>x<__->__>476.0<_____>properties_id<__->__>7<_____>ObjectID<__->__>SamFile_1487943599<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
-input_samfile_id20=0
-nbInput=1
-properties_id=12
-x=580.0
-y=388.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
+#Mon Sep 04 22:39:53 EDT 2017
 Connector1Output=True
 Name=BamFile
-Object=
-ObjectID=BamFile_1487943593
+ObjectID=BamFile_408103819
+ObjectType=Output
+OutputBamFile=True
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=BamFile
+output_bamfile_id=0
+properties_id=11
+x=566.0
+y=213.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+AO_AO1_O_JComboBoxValue=bam
+AO_AO1_O_box=bam
+AO_AO1_T_JTextFieldValue=PREFIX
+Advanced_Options=true
+ClassName=programs.samtools_sort
+ClusterProgramName=samtools
+Connector0Output=True
+Connector2=Sam, Bam, Cram File
+Description=
+EditorClassName=editors.samtools_sortEditors
+Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableCluster=samtools sort
+ExecutableDocker=samtools sort
+ExecutableLinux=/usr/bin/docker
+ExecutableMacOSX=/usr/local/bin/docker
+HelpSupplementary=Sort alignments by leftmost coordinates, or by read name when -n is used. An appropriate @HD-SO sort order header tag will be added or an existing one updated if necessary.
+InputBamFile=Connector2
+InputCramFile=Connector2
+InputSamFile=Connector2
+Name=samtools sort
+NoThread=false
+NormalExitValue=0
+ObjectID=samtools sort_408103821
+ObjectType=Program
+OneConnectorOnlyFor=2
+OutputBamFile=Connector0
+OutputCramFile=Connector0
+OutputOutputText=Connector0
+OutputResults=Connector0
+OutputSamFile=Connector0
+Publication=
+Type=NGS\: SAMTOOLS
+VerifyExitValue=false
+Version=1.3.2
+WebServices=
+Website=
+colorMode=ORANGE
+debug=false
+defaultColor=ORANGE
+defaultPgrmValues=Default_Options<>true<>AO_AO1_T_JTextFieldValue<>PREFIX<>AO_AO1_O_JComboBoxValue<>bam<>
+filename=/home/truc/test/armadillo2/data/properties/samtools_sort.properties
+inputObject_bamfile_id20_properties=BamFile_____has_____12_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>y<__->__>213.0<_____>OutputBamFile<__->__>True<_____>x<__->__>566.0<_____>ObjectID<__->__>BamFile_408103819<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+input_bamfile_id20=0
+nbInput=1
+properties_id=12
+x=670.0
+y=158.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=BamFile
+ObjectID=BamFile_408103822
 ObjectType=Output
 OutputBamFile=True
 colorMode=GREEN
@@ -399,343 +436,26 @@ editorClass=editors.OutputEditor
 outputType=BamFile
 output_bamfile_id=0
 properties_id=13
-x=755.0
-y=221.0
+x=784.0
+y=212.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=BamFile
-Object=
-ObjectID=BamFile_1487943592
-ObjectType=Output
-OutputBamFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=BamFile
-output_bamfile_id=0
-properties_id=14
-x=760.0
-y=332.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=BamFile
-Object=
-ObjectID=BamFile_1487943591
-ObjectType=Output
-OutputBamFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=BamFile
-output_bamfile_id=0
-properties_id=15
-x=760.0
-y=442.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-AO_AO1_O_JComboBoxValue=bam
-AO_AO1_O_box=bam
-AO_AO1_T_JTextFieldValue=PREFIX
-Advanced_Options=true
-ClassName=programs.samtools_sort
-Connector0Output=True
-Connector2=Sam, Bam, Cram File
-Description=
-EditorClassName=editors.samtools_sortEditors
-Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
-ExecutableLinux=/usr/bin/docker
-ExecutableMacOSX=/usr/local/bin/docker
-HelpSupplementary=Sort alignments by leftmost coordinates, or by read name when -n is used. An appropriate @HD-SO sort order header tag will be added or an existing one updated if necessary.
-InputBamFile=Connector2
-InputCramFile=Connector2
-InputSamFile=Connector2
-Name=samtools sort
-NoThread=false
-NormalExitValue=0
-Object=
-ObjectID=samtools sort_1487943590
-ObjectType=Program
-OneConnectorOnlyFor=2
-OutputBamFile=Connector0
-OutputCramFile=Connector0
-OutputOutputText=Connector0
-OutputResults=Connector0
-OutputSamFile=Connector0
-Publication=
-Type=NGS\: SAMTOOLS
-VerifyExitValue=false
-Version=1.3.1
-WebServices=
-Website=
-colorMode=ORANGE
-debug=false
-defaultColor=ORANGE
-defaultPgrmValues=Default_Options<>true<>AO_AO1_T_JTextFieldValue<>PREFIX<>AO_AO1_O_JComboBoxValue<>bam<>
-filename=./armadillo2-master/data/properties/samtools_sort.properties
-inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>221.0<_____>OutputBamFile<__->__>True<_____>x<__->__>755.0<_____>properties_id<__->__>13<_____>ObjectID<__->__>BamFile_1487943593<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-input_bamfile_id20=0
-nbInput=1
-properties_id=16
-x=853.0
-y=167.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-AO_AO1_O_JComboBoxValue=bam
-AO_AO1_O_box=bam
-AO_AO1_T_JTextFieldValue=PREFIX
-Advanced_Options=true
-ClassName=programs.samtools_sort
-Connector0Output=True
-Connector2=Sam, Bam, Cram File
-Description=
-EditorClassName=editors.samtools_sortEditors
-Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
-ExecutableLinux=/usr/bin/docker
-ExecutableMacOSX=/usr/local/bin/docker
-HelpSupplementary=Sort alignments by leftmost coordinates, or by read name when -n is used. An appropriate @HD-SO sort order header tag will be added or an existing one updated if necessary.
-InputBamFile=Connector2
-InputCramFile=Connector2
-InputSamFile=Connector2
-Name=samtools sort
-NoThread=false
-NormalExitValue=0
-Object=
-ObjectID=samtools sort_1487943589
-ObjectType=Program
-OneConnectorOnlyFor=2
-OutputBamFile=Connector0
-OutputCramFile=Connector0
-OutputOutputText=Connector0
-OutputResults=Connector0
-OutputSamFile=Connector0
-Publication=
-Type=NGS\: SAMTOOLS
-VerifyExitValue=false
-Version=1.3.1
-WebServices=
-Website=
-colorMode=ORANGE
-debug=false
-defaultColor=ORANGE
-defaultPgrmValues=Default_Options<>true<>AO_AO1_T_JTextFieldValue<>PREFIX<>AO_AO1_O_JComboBoxValue<>bam<>
-filename=./armadillo2-master/data/properties/samtools_sort.properties
-inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>442.0<_____>OutputBamFile<__->__>True<_____>x<__->__>760.0<_____>properties_id<__->__>15<_____>ObjectID<__->__>BamFile_1487943591<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-input_bamfile_id20=0
-nbInput=1
-properties_id=17
-x=861.0
-y=388.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-AO_AO1_O_JComboBoxValue=bam
-AO_AO1_O_box=bam
-AO_AO1_T_JTextFieldValue=PREFIX
-Advanced_Options=true
-ClassName=programs.samtools_sort
-Connector0Output=True
-Connector2=Sam, Bam, Cram File
-Description=
-EditorClassName=editors.samtools_sortEditors
-Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
-ExecutableLinux=/usr/bin/docker
-ExecutableMacOSX=/usr/local/bin/docker
-HelpSupplementary=Sort alignments by leftmost coordinates, or by read name when -n is used. An appropriate @HD-SO sort order header tag will be added or an existing one updated if necessary.
-InputBamFile=Connector2
-InputCramFile=Connector2
-InputSamFile=Connector2
-Name=samtools sort
-NoThread=false
-NormalExitValue=0
-Object=
-ObjectID=samtools sort_1487943588
-ObjectType=Program
-OneConnectorOnlyFor=2
-OutputBamFile=Connector0
-OutputCramFile=Connector0
-OutputOutputText=Connector0
-OutputResults=Connector0
-OutputSamFile=Connector0
-Publication=
-Type=NGS\: SAMTOOLS
-VerifyExitValue=false
-Version=1.3.1
-WebServices=
-Website=
-colorMode=ORANGE
-debug=false
-defaultColor=ORANGE
-defaultPgrmValues=Default_Options<>true<>AO_AO1_T_JTextFieldValue<>PREFIX<>AO_AO1_O_JComboBoxValue<>bam<>
-filename=./armadillo2-master/data/properties/samtools_sort.properties
-inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>332.0<_____>OutputBamFile<__->__>True<_____>x<__->__>760.0<_____>properties_id<__->__>14<_____>ObjectID<__->__>BamFile_1487943592<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-input_bamfile_id20=0
-nbInput=1
-properties_id=18
-x=857.0
-y=278.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=BamFile
-Object=
-ObjectID=BamFile_1487943587
-ObjectType=Output
-OutputBamFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=BamFile
-output_bamfile_id=0
-properties_id=19
-x=1023.0
-y=221.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=BamFile
-Object=
-ObjectID=BamFile_1487943586
-ObjectType=Output
-OutputBamFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=BamFile
-output_bamfile_id=0
-properties_id=20
-x=1025.0
-y=331.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=BamFile
-Object=
-ObjectID=BamFile_1487943585
-ObjectType=Output
-OutputBamFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=BamFile
-output_bamfile_id=0
-properties_id=21
-x=1030.0
-y=442.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-ClassName=programs.bwa_mem
-Connector0Output=True
-Connector2=Fastq Pair-end
-Connector3=Fastq
-Connector4=Genome Ref, (Fasta)
-Description=
-EditorClassName=editors.bwa_memEditors
-Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
-ExecutableLinux=/usr/bin/docker
-ExecutableMacOSX=/usr/local/bin/docker
-HelpSupplementary=BWA-MEM is an algorithms of BWA. BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
-InputFastaFile=Connector4
-InputFastqFile=Connector3
-InputGenomeFile=Connector4
-Name=bwa mem
-NoThread=false
-NormalExitValue=0
-Object=
-ObjectID=bwa mem_1487943584
-ObjectType=Program
-OneConnectorOnlyFor=4,2,3
-OutputOutputText=Connector0
-OutputResults=Connector0
-OutputSamFile=Connector0
-Publication=
-Type=NGS\: 
-VerifyExitValue=false
-Version=1.3.1
-WebServices=
-Website=
-colorMode=ORANGE
-debug=false
-defaultColor=ORANGE
-defaultPgrmValues=Default_Options<>true<>AO_AO1_t_JSpinnerValue<>1<>
-filename=./armadillo2-master/data/properties/bwa_mem.properties
-inputObject_fastafile_id40_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>23<_____>ObjectID<__->__>FastaFile_1487943583<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_fastqfile_id30_properties=FastqFile_____has_____14_____key(s)<_____>outputType<__->__>FastqFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastqFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>202.0<_____>output_fastqfile_id<__->__>0<_____>x<__->__>195.0<_____>OutputFastqFile<__->__>True<_____>properties_id<__->__>6<_____>ObjectID<__->__>FastqFile_1487943600<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-input_fastafile_id40=0
-input_fastqfile_id30=0
-nbInput=3
-properties_id=22
-x=300.0
-y=167.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=FastaFile
-Object=
-ObjectID=FastaFile_1487943583
-ObjectType=Output
-OutputFastaFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=FastaFile
-output_fastafile_id=0
-properties_id=23
-x=192.0
-y=97.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Connector1Output=True
-Name=BCFFile
-Object=
-ObjectID=BCFFile_1487943582
-ObjectType=Output
-OutputBCFFile=True
-colorMode=GREEN
-defaultColor=GREEN
-editorClass=editors.OutputEditor
-outputType=BCFFile
-output_bcffile_id=0
-properties_id=24
-x=1294.0
-y=116.0
-
-Object
-#
-#Mon Aug 28 14:32:17 EDT 2017
+#Mon Sep 04 22:39:53 EDT 2017
 AO_CVCO__multiallelicHYPHENSYMBOLcaller_box=true
 AO_FFO__outputHYPHENSYMBOLtype_JComboBoxValue=v
 AO_FFO__outputHYPHENSYMBOLtype_box=v
 AO_IOO__variantsHYPHENSYMBOLonly_box=true
 Advanced_Options=true
 ClassName=programs.bcftools_call
+ClusterProgramName=bcftools
 Connector0Output=True
 Connector2=VCF, BCF
 Description=
 EditorClassName=editors.bcftools_callEditors
 Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableCluster=bcftools call
+ExecutableDocker=bcftools call
 ExecutableLinux=/usr/bin/docker
 ExecutableMacOSX=/usr/local/bin/docker
 HelpSupplementary=
@@ -744,8 +464,7 @@ InputVCFFile=Connector2
 Name=bcftools call
 NoThread=false
 NormalExitValue=0
-Object=
-ObjectID=bcftools call_1487943580
+ObjectID=bcftools call_408103825
 ObjectType=Program
 OneConnectorOnlyFor=2
 OutputBCFFile=Connector0
@@ -763,204 +482,223 @@ colorMode=ORANGE
 debug=false
 defaultColor=ORANGE
 defaultPgrmValues=Default_Options<>true<>AO_FFO__outputHYPHENSYMBOLtype_JComboBoxValue<>u<>
-filename=./armadillo2-master/data/properties/bcftools_call.properties
-inputObject_bcffile_id20_properties=BCFFile_____has_____14_____key(s)<_____>outputType<__->__>BCFFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BCFFile<_____>output_bcffile_id<__->__>0<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>y<__->__>116.0<_____>OutputBCFFile<__->__>True<_____>x<__->__>1294.0<_____>properties_id<__->__>24<_____>ObjectID<__->__>BCFFile_1487943582<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+filename=/home/truc/test/armadillo2/data/properties/bcftools_call.properties
+inputObject_bcffile_id20_properties=BCFFile_____has_____13_____key(s)<_____>outputType<__->__>BCFFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BCFFile<_____>output_bcffile_id<__->__>0<_____>editorClass<__->__>editors.OutputEditor<_____>ParentID<__->__>samtools mpileup_408103465<_____>y<__->__>128.0<_____>OutputBCFFile<__->__>True<_____>x<__->__>1019.0<_____>ObjectID<__->__>BCFFile_408103833<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
 input_bcffile_id20=0
 nbInput=1
-properties_id=25
-x=1393.0
-y=61.0
+properties_id=14
+x=1125.0
+y=74.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
-ClassName=programs.loadFiles2
+#Mon Sep 04 22:39:53 EDT 2017
+AO_AO1_O_JComboBoxValue=bam
+AO_AO1_O_box=bam
+AO_AO1_T_JTextFieldValue=PREFIX
+Advanced_Options=true
+ClassName=programs.samtools_sort
+ClusterProgramName=samtools
 Connector0Output=True
-Connector1Conditional=True
-Description=Internal application to load a list of files into Armadillo.
-EditorClassName=editors.loadFiles2Editor
-HelpSupplementary=
-InputAncestor=True
-InputFile=Connector2
-InternalArmadilloApplication=true
-Keyword0=Load, Text File, Files,
-Name=Load Files Genome Reference
-NoThread=true
-Object=
-ObjectID=Load Files Genome Reference_1487943579
+Connector2=Sam, Bam, Cram File
+Description=
+EditorClassName=editors.samtools_sortEditors
+Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableCluster=samtools sort
+ExecutableDocker=samtools sort
+ExecutableLinux=/usr/bin/docker
+ExecutableMacOSX=/usr/local/bin/docker
+HelpSupplementary=Sort alignments by leftmost coordinates, or by read name when -n is used. An appropriate @HD-SO sort order header tag will be added or an existing one updated if necessary.
+InputBamFile=Connector2
+InputCramFile=Connector2
+InputSamFile=Connector2
+Name=samtools sort
+NoThread=false
+NormalExitValue=0
+ObjectID=samtools sort_408103826
 ObjectType=Program
-OutputFastaFile=Connector0
-OutputFastqFile=Connector0
-OutputGenomeFile=Connector0
-OutputOutgroup=Connector0
+OneConnectorOnlyFor=2
+OutputBamFile=Connector0
+OutputCramFile=Connector0
+OutputOutputText=Connector0
 OutputResults=Connector0
-OutputSOLIDFile=Connector0
-OutputText=Connector0
-OutputTextFile=Connector0
-Publication=NA
-SampleWorkflow=LoadAllFile.properties.db
-Similar0=LoadAllFile.properties
-Similar1=LoadBlastDB.properties
-Similar2=LoadSequence.properties
-Similar3=LoadTree.properties
-Tooltip=Load File(s)
-Type=SYS\: Input
+OutputSamFile=Connector0
+Publication=
+Type=NGS\: SAMTOOLS
 VerifyExitValue=false
-WebServices=true
-Website=NA
-colorMode=BLUE
+Version=1.3.2
+WebServices=
+Website=
+colorMode=ORANGE
 debug=false
-defaultColor=BLUE
-filename=./armadillo2-master/data/properties/LoadFiles2.properties
-nbInput=0
-properties_id=26
-x=17.0
-y=44.0
+defaultColor=ORANGE
+defaultPgrmValues=Default_Options<>true<>AO_AO1_T_JTextFieldValue<>PREFIX<>AO_AO1_O_JComboBoxValue<>bam<>
+filename=/home/truc/test/armadillo2/data/properties/samtools_sort.properties
+inputObject_bamfile_id20_properties=BamFile_____has_____12_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>y<__->__>327.0<_____>OutputBamFile<__->__>True<_____>x<__->__>574.0<_____>ObjectID<__->__>BamFile_408103711<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+input_bamfile_id20=0
+nbInput=1
+properties_id=15
+x=678.0
+y=273.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
-ClassName=programs.loadFiles2
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=BamFile
+ObjectID=BamFile_408103827
+ObjectType=Output
+OutputBamFile=True
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=BamFile
+output_bamfile_id=0
+properties_id=16
+x=794.0
+y=325.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+AO_AO1_S_box=true
+AO_AO1_b_box=true
+Advanced_Options=true
+ClassName=programs.samtools_view
+ClusterProgramName=samtools
 Connector0Output=True
-Connector1Conditional=True
-Description=Internal application to load a list of files into Armadillo.
-EditorClassName=editors.loadFiles2Editor
-HelpSupplementary=
-InputAncestor=True
-InputFile=Connector2
-InternalArmadilloApplication=true
-Keyword0=Load, Text File, Files,
-Name=Load Files A Sample Fastq
-NoThread=true
-Object=
-ObjectID=Load Files A Sample Fastq_1487943578
+Connector2=Sam, Bam, Cram File
+Description=
+EditorClassName=editors.samtools_viewEditors
+Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableCluster=samtools view
+ExecutableDocker=samtools view
+ExecutableLinux=/usr/bin/docker
+ExecutableMacOSX=/usr/local/bin/docker
+HelpSupplementary=With no options or regions specified, prints all alignments in the specified input alignment file (in SAM, BAM, or CRAM format) to standard output in SAM format (with no header).
+InputBamFile=Connector2
+InputCramFile=Connector2
+InputSamFile=Connector2
+Name=samtools view
+NoThread=false
+NormalExitValue=0
+ObjectID=samtools view_408103828
 ObjectType=Program
-OutputFastaFile=Connector0
-OutputFastqFile=Connector0
-OutputGenomeFile=Connector0
-OutputOutgroup=Connector0
+OneConnectorOnlyFor=2
+OutputBamFile=Connector0
+OutputOutputText=Connector0
 OutputResults=Connector0
-OutputSOLIDFile=Connector0
-OutputText=Connector0
-OutputTextFile=Connector0
-Publication=NA
-SampleWorkflow=LoadAllFile.properties.db
-Similar0=LoadAllFile.properties
-Similar1=LoadBlastDB.properties
-Similar2=LoadSequence.properties
-Similar3=LoadTree.properties
-Tooltip=Load File(s)
-Type=SYS\: Input
+OutputSamFile=Connector0
+Publication=
+Type=NGS\: SAMTOOLS
 VerifyExitValue=false
-WebServices=true
-Website=NA
-colorMode=BLUE
+Version=1.3.2
+WebServices=
+Website=
+colorMode=ORANGE
 debug=false
-defaultColor=BLUE
-filename=./armadillo2-master/data/properties/LoadFiles2.properties
-nbInput=0
-properties_id=27
-x=17.0
-y=148.0
+defaultColor=ORANGE
+defaultPgrmValues=Default_Options<>true<>
+filename=/home/truc/test/armadillo2/data/properties/samtools_view.properties
+inputObject_samfile_id20_properties=SamFile_____has_____12_____key(s)<_____>outputType<__->__>SamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>output_samfile_id<__->__>0<_____>Name<__->__>SamFile<_____>editorClass<__->__>editors.OutputEditor<_____>y<__->__>439.0<_____>x<__->__>358.0<_____>ObjectID<__->__>SamFile_408103709<_____>ObjectType<__->__>Output<_____>OutputSamFile<__->__>True<_____>Connector1Output<__->__>True<_____>
+input_samfile_id20=0
+nbInput=1
+properties_id=17
+x=458.0
+y=385.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
-ClassName=programs.loadFiles2
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=BamFile
+ObjectID=BamFile_408103829
+ObjectType=Output
+OutputBamFile=True
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=BamFile
+output_bamfile_id=0
+properties_id=18
+x=565.0
+y=440.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+AO_AO1_O_JComboBoxValue=bam
+AO_AO1_O_box=bam
+AO_AO1_T_JTextFieldValue=PREFIX
+Advanced_Options=true
+ClassName=programs.samtools_sort
+ClusterProgramName=samtools
 Connector0Output=True
-Connector1Conditional=True
-Description=Internal application to load a list of files into Armadillo.
-EditorClassName=editors.loadFiles2Editor
-HelpSupplementary=
-InputAncestor=True
-InputFile=Connector2
-InternalArmadilloApplication=true
-Keyword0=Load, Text File, Files,
-Name=Load Files B Sample Fastq
-NoThread=true
-Object=
-ObjectID=Load Files B Sample Fastq_1487943577
+Connector2=Sam, Bam, Cram File
+Description=
+EditorClassName=editors.samtools_sortEditors
+Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableCluster=samtools sort
+ExecutableDocker=samtools sort
+ExecutableLinux=/usr/bin/docker
+ExecutableMacOSX=/usr/local/bin/docker
+HelpSupplementary=Sort alignments by leftmost coordinates, or by read name when -n is used. An appropriate @HD-SO sort order header tag will be added or an existing one updated if necessary.
+InputBamFile=Connector2
+InputCramFile=Connector2
+InputSamFile=Connector2
+Name=samtools sort
+NoThread=false
+NormalExitValue=0
+ObjectID=samtools sort_408103830
 ObjectType=Program
-OutputFastaFile=Connector0
-OutputFastqFile=Connector0
-OutputGenomeFile=Connector0
-OutputOutgroup=Connector0
+OneConnectorOnlyFor=2
+OutputBamFile=Connector0
+OutputCramFile=Connector0
+OutputOutputText=Connector0
 OutputResults=Connector0
-OutputSOLIDFile=Connector0
-OutputText=Connector0
-OutputTextFile=Connector0
-Publication=NA
-SampleWorkflow=LoadAllFile.properties.db
-Similar0=LoadAllFile.properties
-Similar1=LoadBlastDB.properties
-Similar2=LoadSequence.properties
-Similar3=LoadTree.properties
-Tooltip=Load File(s)
-Type=SYS\: Input
+OutputSamFile=Connector0
+Publication=
+Type=NGS\: SAMTOOLS
 VerifyExitValue=false
-WebServices=true
-Website=NA
-colorMode=BLUE
+Version=1.3.2
+WebServices=
+Website=
+colorMode=ORANGE
 debug=false
-defaultColor=BLUE
-filename=./armadillo2-master/data/properties/LoadFiles2.properties
-nbInput=0
-properties_id=28
-x=17.0
-y=260.0
+defaultColor=ORANGE
+defaultPgrmValues=Default_Options<>true<>AO_AO1_T_JTextFieldValue<>PREFIX<>AO_AO1_O_JComboBoxValue<>bam<>
+filename=/home/truc/test/armadillo2/data/properties/samtools_sort.properties
+inputObject_bamfile_id20_properties=BamFile_____has_____12_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>y<__->__>440.0<_____>OutputBamFile<__->__>True<_____>x<__->__>565.0<_____>ObjectID<__->__>BamFile_408103829<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+input_bamfile_id20=0
+nbInput=1
+properties_id=19
+x=674.0
+y=387.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
-ClassName=programs.loadFiles2
-Connector0Output=True
-Connector1Conditional=True
-Description=Internal application to load a list of files into Armadillo.
-EditorClassName=editors.loadFiles2Editor
-HelpSupplementary=
-InputAncestor=True
-InputFile=Connector2
-InternalArmadilloApplication=true
-Keyword0=Load, Text File, Files,
-Name=Load Files C Sample Fastq
-NoThread=true
-Object=
-ObjectID=Load Files C Sample Fastq_1487943576
-ObjectType=Program
-OutputFastaFile=Connector0
-OutputFastqFile=Connector0
-OutputGenomeFile=Connector0
-OutputOutgroup=Connector0
-OutputResults=Connector0
-OutputSOLIDFile=Connector0
-OutputText=Connector0
-OutputTextFile=Connector0
-Publication=NA
-SampleWorkflow=LoadAllFile.properties.db
-Similar0=LoadAllFile.properties
-Similar1=LoadBlastDB.properties
-Similar2=LoadSequence.properties
-Similar3=LoadTree.properties
-Tooltip=Load File(s)
-Type=SYS\: Input
-VerifyExitValue=false
-WebServices=true
-Website=NA
-colorMode=BLUE
-debug=false
-defaultColor=BLUE
-filename=./armadillo2-master/data/properties/LoadFiles2.properties
-nbInput=0
-properties_id=29
-x=16.0
-y=369.0
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=BamFile
+ObjectID=BamFile_408103831
+ObjectType=Output
+OutputBamFile=True
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=BamFile
+output_bamfile_id=0
+properties_id=20
+x=791.0
+y=439.0
 
 Object
 #
-#Mon Aug 28 14:32:17 EDT 2017
+#Mon Sep 04 22:39:53 EDT 2017
 AO_OO__BCF_box=true
 Advanced_Options=true
 ClassName=programs.samtools_mpileup
+ClusterProgramName=samtools
 Connector0Output=True
 Connector2=Bam, (Bai)
 Connector3=faidx-indexed reference
@@ -968,6 +706,8 @@ Connector4=Bed or position list,
 Description=Alignment records are grouped by sample (SM) identifiers in @RG header lines. If sample identifiers are absent, each input file is regarded as one sample. In the pileup format (without -u or -g), each line represents a genomic position, consisting of chromosome name, 1-based coordinate, reference base, the number of reads covering the site, read bases, base qualities and alignment mapping qualities. Information on match, mismatch, indel, strand, mapping quality and start and end of a read are all encoded at the read base column. At this column, a dot stands for a match to the reference base on the forward strand, a comma for a match on the reverse strand, a '>' or '<' for a reference skip, `ACGTN' for a mismatch on the forward strand and `acgtn' for a mismatch on the reverse strand. A pattern `\\+[0-9]+[ACGTNacgtn]+' indicates there is an insertion between this reference position and the next reference position. The length of the insertion is given by the integer in the pattern, followed by the inserted sequence. Similarly, a pattern `-[0-9]+[ACGTNacgtn]+' represents a deletion from the reference. The deleted bases will be presented as `*' in the following lines. Also at the read base column, a symbol `^' marks the start of a read. The ASCII of the character following `^' minus 33 gives the mapping quality. A symbol `$' marks the end of a read segment. Note that there are two orthogonal ways to specify locations in the input file; via -r region and -l file. The former uses (and requires) an index to do random access while the latter streams through the file contents filtering out the specified regions, requiring no index. The two may be used in conjunction. For example a BED file containing locations of genes in chromosome 20 could be specified using -r 20 -l chr20.bed, meaning that the index is used to find chromosome 20 and then it is filtered for the regions listed in the bed file.
 EditorClassName=editors.samtools_mpileupEditors
 Executable="C\:Program FilesGitbinbash.exe" --login -i "C\:Program FilesDocker Toolboxstart.sh"
+ExecutableCluster=samtools mpileup
+ExecutableDocker=samtools mpileup
 ExecutableLinux=/usr/bin/docker
 ExecutableMacOSX=/usr/local/bin/docker
 HelpSupplementary=samtools mpileup [-EBugp] [-C capQcoef] [-r reg] [-f in.fa] [-l list] [-Q minBaseQ] [-q minMapQ] in.bam [in2.bam [...]] Generate VCF, BCF or pileup for one or multiple BAM files.
@@ -978,8 +718,7 @@ InputFastaFile=Connector3
 Name=samtools mpileup
 NoThread=false
 NormalExitValue=0
-Object=
-ObjectID=samtools mpileup_1487943574
+ObjectID=samtools mpileup_408103832
 ObjectType=Program
 OneConnectorOnlyFor=4,3
 OutputBCFFile=Connector0
@@ -990,76 +729,316 @@ OutputVCFFile=Connector0
 Publication=
 Type=NGS\: SAMTOOLS
 VerifyExitValue=false
-Version=1.3.1
+Version=1.3.2
 WebServices=
 Website=
 colorMode=ORANGE
 debug=false
 defaultColor=ORANGE
-defaultPgrmValues=Default_Options<>true<>
-filename=./armadillo2-master/data/properties/samtools_mpileup.properties
-inputObject_bamfile_id20_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>221.0<_____>OutputBamFile<__->__>True<_____>x<__->__>1023.0<_____>properties_id<__->__>19<_____>ObjectID<__->__>BamFile_1487943587<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_bamfile_id21_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>331.0<_____>OutputBamFile<__->__>True<_____>x<__->__>1025.0<_____>properties_id<__->__>20<_____>ObjectID<__->__>BamFile_1487943586<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_bamfile_id22_properties=BamFile_____has_____14_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>Object<__->__><_____>y<__->__>442.0<_____>OutputBamFile<__->__>True<_____>x<__->__>1030.0<_____>properties_id<__->__>21<_____>ObjectID<__->__>BamFile_1487943585<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
-inputObject_fastafile_id30_properties=FastaFile_____has_____14_____key(s)<_____>outputType<__->__>FastaFile<_____>OutputFastaFile<__->__>True<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>Object<__->__><_____>output_fastafile_id<__->__>0<_____>y<__->__>97.0<_____>x<__->__>192.0<_____>properties_id<__->__>23<_____>ObjectID<__->__>FastaFile_1487943583<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+defaultPgrmValues=Default_Options<>true
+filename=/home/truc/test/armadillo2/data/properties/samtools_mpileup.properties
+inputObject_bamfile_id20_properties=BamFile_____has_____12_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>y<__->__>212.0<_____>OutputBamFile<__->__>True<_____>x<__->__>784.0<_____>ObjectID<__->__>BamFile_408103822<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_bamfile_id21_properties=BamFile_____has_____12_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>y<__->__>325.0<_____>OutputBamFile<__->__>True<_____>x<__->__>794.0<_____>ObjectID<__->__>BamFile_408103827<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_bamfile_id22_properties=BamFile_____has_____12_____key(s)<_____>outputType<__->__>BamFile<_____>defaultColor<__->__>GREEN<_____>colorMode<__->__>GREEN<_____>Name<__->__>BamFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_bamfile_id<__->__>0<_____>y<__->__>439.0<_____>OutputBamFile<__->__>True<_____>x<__->__>791.0<_____>ObjectID<__->__>BamFile_408103831<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
+inputObject_fastafile_id30_properties=FastaFile_____has_____13_____key(s)<_____>outputType<__->__>FastaFile<_____>defaultColor<__->__>GREEN<_____>OutputFastaFile<__->__>True<_____>colorMode<__->__>GREEN<_____>Name<__->__>FastaFile<_____>editorClass<__->__>editors.OutputEditor<_____>output_fastafile_id<__->__>0<_____>y<__->__>116.0<_____>x<__->__>120.0<_____>properties_id<__->__>11<_____>ObjectID<__->__>FastaFile_408104059<_____>ObjectType<__->__>Output<_____>Connector1Output<__->__>True<_____>
 input_bamfile_id20=0
 input_bamfile_id21=0
 input_bamfile_id22=0
 input_fastafile_id30=0
 nbInput=3
+properties_id=21
+x=913.0
+y=77.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=BCFFile
+ObjectID=BCFFile_408103833
+ObjectType=Output
+OutputBCFFile=True
+ParentID=samtools mpileup_408103465
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=BCFFile
+output_bcffile_id=0
+properties_id=22
+x=1019.0
+y=128.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=VCFFile
+ObjectID=VCFFile_408103941
+ObjectType=Output
+OutputVCFFile=True
+ParentID=bcftools call_408103825
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=VCFFile
+output_vcffile_id=0
+properties_id=23
+x=1248.0
+y=125.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+ClassName=programs.loadFiles2
+Connector0Output=True
+Connector1Conditional=True
+Description=Internal application to load a list of files into Armadillo.
+EditorClassName=editors.loadFiles2Editor
+HelpSupplementary=
+InputAncestor=True
+InputFile=Connector2
+InternalArmadilloApplication=true
+Keyword0=Load, Text File, Files,
+Name=Load Genome
+NoThread=true
+ObjectID=Load Files 2.0_408103946
+ObjectType=Program
+OutputFastaFile=Connector0
+OutputFastqFile=Connector0
+OutputGenomeFile=Connector0
+OutputOutgroup=Connector0
+OutputResults=Connector0
+OutputSOLIDFile=Connector0
+OutputText=Connector0
+OutputTextFile=Connector0
+Publication=NA
+SampleWorkflow=LoadAllFile.properties.db
+Similar0=LoadAllFile.properties
+Similar1=LoadBlastDB.properties
+Similar2=LoadSequence.properties
+Similar3=LoadTree.properties
+Tooltip=Load File(s)
+Type=SYS\: Input
+VerifyExitValue=false
+WebServices=true
+Website=NA
+colorMode=BLUE
+debug=false
+defaultColor=BLUE
+filename=/home/truc/test/armadillo2/data/properties/LoadFiles2.properties
+nbInput=0
+properties_id=24
+x=16.0
+y=59.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+ClassName=programs.loadFiles2
+Connector0Output=True
+Connector1Conditional=True
+Description=Internal application to load a list of files into Armadillo.
+EditorClassName=editors.loadFiles2Editor
+HelpSupplementary=
+InputAncestor=True
+InputFile=Connector2
+InternalArmadilloApplication=true
+Keyword0=Load, Text File, Files,
+Name=Load Sample A
+NoThread=true
+ObjectID=Load Files 2.0_408103950
+ObjectType=Program
+OutputFastaFile=Connector0
+OutputFastqFile=Connector0
+OutputGenomeFile=Connector0
+OutputOutgroup=Connector0
+OutputResults=Connector0
+OutputSOLIDFile=Connector0
+OutputText=Connector0
+OutputTextFile=Connector0
+Publication=NA
+SampleWorkflow=LoadAllFile.properties.db
+Similar0=LoadAllFile.properties
+Similar1=LoadBlastDB.properties
+Similar2=LoadSequence.properties
+Similar3=LoadTree.properties
+Tooltip=Load File(s)
+Type=SYS\: Input
+VerifyExitValue=false
+WebServices=true
+Website=NA
+colorMode=BLUE
+debug=false
+defaultColor=BLUE
+filename=/home/truc/test/armadillo2/data/properties/LoadFiles2.properties
+nbInput=0
+properties_id=25
+x=17.0
+y=169.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+ClassName=programs.loadFiles2
+Connector0Output=True
+Connector1Conditional=True
+Description=Internal application to load a list of files into Armadillo.
+EditorClassName=editors.loadFiles2Editor
+HelpSupplementary=
+InputAncestor=True
+InputFile=Connector2
+InternalArmadilloApplication=true
+Keyword0=Load, Text File, Files,
+Name=Load Sample B
+NoThread=true
+ObjectID=Load Files 2.0_408103953
+ObjectType=Program
+OutputFastaFile=Connector0
+OutputFastqFile=Connector0
+OutputGenomeFile=Connector0
+OutputOutgroup=Connector0
+OutputResults=Connector0
+OutputSOLIDFile=Connector0
+OutputText=Connector0
+OutputTextFile=Connector0
+Publication=NA
+SampleWorkflow=LoadAllFile.properties.db
+Similar0=LoadAllFile.properties
+Similar1=LoadBlastDB.properties
+Similar2=LoadSequence.properties
+Similar3=LoadTree.properties
+Tooltip=Load File(s)
+Type=SYS\: Input
+VerifyExitValue=false
+WebServices=true
+Website=NA
+colorMode=BLUE
+debug=false
+defaultColor=BLUE
+filename=/home/truc/test/armadillo2/data/properties/LoadFiles2.properties
+nbInput=0
+properties_id=26
+x=14.0
+y=283.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+ClassName=programs.loadFiles2
+Connector0Output=True
+Connector1Conditional=True
+Description=Internal application to load a list of files into Armadillo.
+EditorClassName=editors.loadFiles2Editor
+HelpSupplementary=
+InputAncestor=True
+InputFile=Connector2
+InternalArmadilloApplication=true
+Keyword0=Load, Text File, Files,
+Name=Load Sample C
+NoThread=true
+ObjectID=Load Files 2.0_408103955
+ObjectType=Program
+OutputFastaFile=Connector0
+OutputFastqFile=Connector0
+OutputGenomeFile=Connector0
+OutputOutgroup=Connector0
+OutputResults=Connector0
+OutputSOLIDFile=Connector0
+OutputText=Connector0
+OutputTextFile=Connector0
+Publication=NA
+SampleWorkflow=LoadAllFile.properties.db
+Similar0=LoadAllFile.properties
+Similar1=LoadBlastDB.properties
+Similar2=LoadSequence.properties
+Similar3=LoadTree.properties
+Tooltip=Load File(s)
+Type=SYS\: Input
+VerifyExitValue=false
+WebServices=true
+Website=NA
+colorMode=BLUE
+debug=false
+defaultColor=BLUE
+filename=/home/truc/test/armadillo2/data/properties/LoadFiles2.properties
+nbInput=0
+properties_id=27
+x=13.0
+y=404.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=FastqFile
+ObjectID=FastqFile_408103956
+ObjectType=Output
+OutputFastqFile=True
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=FastqFile
+output_fastqfile_id=0
+properties_id=28
+x=120.0
+y=453.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=FastqFile
+ObjectID=FastqFile_408104057
+ObjectType=Output
+OutputFastqFile=True
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=FastqFile
+output_fastqfile_id=0
+properties_id=29
+x=123.0
+y=334.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=FastqFile
+ObjectID=FastqFile_408104058
+ObjectType=Output
+OutputFastqFile=True
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=FastqFile
+output_fastqfile_id=0
 properties_id=30
-x=1117.0
-y=62.0
+x=118.0
+y=218.0
+
+Object
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Connector1Output=True
+Name=FastaFile
+ObjectID=FastaFile_408104059
+ObjectType=Output
+OutputFastaFile=True
+colorMode=GREEN
+defaultColor=GREEN
+editorClass=editors.OutputEditor
+outputType=FastaFile
+output_fastafile_id=0
+properties_id=31
+x=120.0
+y=116.0
 
 Connector
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-13290187
-dest_properties_id=4
-destination=0
-displayEdge=false
-notDeletabled=true
-source=0
-source_properties_id=29
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-13224394
-dest_properties_id=3
-destination=3
-displayEdge=false
-notDeletabled=false
-source=1
-source_properties_id=4
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-13158601
-dest_properties_id=5
-destination=0
-displayEdge=false
-notDeletabled=true
-source=0
-source_properties_id=28
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-13092808
-dest_properties_id=2
-destination=3
-displayEdge=false
-notDeletabled=false
-source=1
-source_properties_id=5
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-13027015
-dest_properties_id=6
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-16777216
+dest_properties_id=28
 destination=0
 displayEdge=false
 notDeletabled=true
@@ -1068,20 +1047,20 @@ source_properties_id=27
 
 Connector
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12961222
-dest_properties_id=22
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-16711423
+dest_properties_id=3
 destination=3
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=6
+source_properties_id=28
 
 Connector
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12895429
-dest_properties_id=23
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-16645630
+dest_properties_id=29
 destination=0
 displayEdge=false
 notDeletabled=true
@@ -1090,41 +1069,283 @@ source_properties_id=26
 
 Connector
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12829636
-dest_properties_id=22
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-16579837
+dest_properties_id=2
+destination=3
+displayEdge=false
+notDeletabled=false
+source=1
+source_properties_id=29
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-16514044
+dest_properties_id=30
+destination=0
+displayEdge=false
+notDeletabled=true
+source=0
+source_properties_id=25
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-16448251
+dest_properties_id=4
+destination=3
+displayEdge=false
+notDeletabled=false
+source=1
+source_properties_id=30
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-16382458
+dest_properties_id=31
+destination=0
+displayEdge=false
+notDeletabled=true
+source=0
+source_properties_id=24
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-16316665
+dest_properties_id=4
 destination=4
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=23
+source_properties_id=31
 
 Connector
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12763843
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-16250872
 dest_properties_id=2
 destination=4
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=23
+source_properties_id=31
 
 Connector
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12698050
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-16185079
 dest_properties_id=3
 destination=4
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=23
+source_properties_id=31
 
 Connector
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12632257
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-16053493
+dest_properties_id=22
+destination=0
+displayEdge=false
+notDeletabled=true
+source=0
+source_properties_id=21
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15724528
+dest_properties_id=14
+destination=2
+displayEdge=false
+notDeletabled=false
+source=1
+source_properties_id=22
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15658735
+dest_properties_id=13
+destination=0
+displayEdge=false
+notDeletabled=true
+source=0
+source_properties_id=12
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15592942
+dest_properties_id=21
+destination=2
+displayEdge=false
+notDeletabled=false
+source=1
+source_properties_id=13
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15527149
+dest_properties_id=16
+destination=0
+displayEdge=false
+notDeletabled=true
+source=0
+source_properties_id=15
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15461356
+dest_properties_id=21
+destination=2
+displayEdge=false
+notDeletabled=false
+source=1
+source_properties_id=16
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15395563
+dest_properties_id=20
+destination=0
+displayEdge=false
+notDeletabled=true
+source=0
+source_properties_id=19
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15329770
+dest_properties_id=21
+destination=2
+displayEdge=false
+notDeletabled=false
+source=1
+source_properties_id=20
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15263977
+dest_properties_id=18
+destination=0
+displayEdge=false
+notDeletabled=true
+source=0
+source_properties_id=17
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15198184
+dest_properties_id=19
+destination=2
+displayEdge=false
+notDeletabled=false
+source=1
+source_properties_id=18
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15132391
+dest_properties_id=9
+destination=0
+displayEdge=false
+notDeletabled=true
+source=0
+source_properties_id=8
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15066598
+dest_properties_id=15
+destination=2
+displayEdge=false
+notDeletabled=false
+source=1
+source_properties_id=9
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-15000805
+dest_properties_id=11
+destination=0
+displayEdge=false
+notDeletabled=true
+source=0
+source_properties_id=10
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-14935012
+dest_properties_id=12
+destination=2
+displayEdge=false
+notDeletabled=false
+source=1
+source_properties_id=11
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-14869219
+dest_properties_id=5
+destination=0
+displayEdge=false
+notDeletabled=true
+source=0
+source_properties_id=2
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-14803426
+dest_properties_id=8
+destination=2
+displayEdge=false
+notDeletabled=false
+source=1
+source_properties_id=5
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-14737633
+dest_properties_id=6
+destination=0
+displayEdge=false
+notDeletabled=true
+source=0
+source_properties_id=4
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-14671840
+dest_properties_id=10
+destination=2
+displayEdge=false
+notDeletabled=false
+source=1
+source_properties_id=6
+
+Connector
+#
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-14606047
 dest_properties_id=7
 destination=0
 displayEdge=false
@@ -1134,9 +1355,9 @@ source_properties_id=3
 
 Connector
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12566464
-dest_properties_id=12
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-14540254
+dest_properties_id=17
 destination=2
 displayEdge=false
 notDeletabled=false
@@ -1145,211 +1366,24 @@ source_properties_id=7
 
 Connector
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12500671
-dest_properties_id=8
-destination=0
-displayEdge=false
-notDeletabled=true
-source=0
-source_properties_id=2
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12434878
-dest_properties_id=11
-destination=2
-displayEdge=false
-notDeletabled=false
-source=1
-source_properties_id=8
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12369085
-dest_properties_id=9
-destination=0
-displayEdge=false
-notDeletabled=true
-source=0
-source_properties_id=22
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12303292
-dest_properties_id=10
-destination=2
-displayEdge=false
-notDeletabled=false
-source=1
-source_properties_id=9
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12237499
-dest_properties_id=13
-destination=0
-displayEdge=false
-notDeletabled=true
-source=0
-source_properties_id=10
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12171706
-dest_properties_id=16
-destination=2
-displayEdge=false
-notDeletabled=false
-source=1
-source_properties_id=13
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12105913
-dest_properties_id=14
-destination=0
-displayEdge=false
-notDeletabled=true
-source=0
-source_properties_id=11
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-12040120
-dest_properties_id=18
-destination=2
-displayEdge=false
-notDeletabled=false
-source=1
-source_properties_id=14
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-11974327
-dest_properties_id=15
-destination=0
-displayEdge=false
-notDeletabled=true
-source=0
-source_properties_id=12
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-11908534
-dest_properties_id=17
-destination=2
-displayEdge=false
-notDeletabled=false
-source=1
-source_properties_id=15
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-11842741
-dest_properties_id=30
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-14474461
+dest_properties_id=21
 destination=3
 displayEdge=false
 notDeletabled=false
 source=1
-source_properties_id=23
+source_properties_id=31
 
 Connector
 #
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-11776948
-dest_properties_id=19
+#Mon Sep 04 22:39:53 EDT 2017
+Name=connector_-14342875
+dest_properties_id=23
 destination=0
 displayEdge=false
 notDeletabled=true
 source=0
-source_properties_id=16
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-11711155
-dest_properties_id=30
-destination=2
-displayEdge=false
-notDeletabled=false
-source=1
-source_properties_id=19
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-11645362
-dest_properties_id=20
-destination=0
-displayEdge=false
-notDeletabled=true
-source=0
-source_properties_id=18
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-11579569
-dest_properties_id=30
-destination=2
-displayEdge=false
-notDeletabled=false
-source=1
-source_properties_id=20
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-11513776
-dest_properties_id=21
-destination=0
-displayEdge=false
-notDeletabled=true
-source=0
-source_properties_id=17
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-11447983
-dest_properties_id=30
-destination=2
-displayEdge=false
-notDeletabled=false
-source=1
-source_properties_id=21
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-11382190
-dest_properties_id=24
-destination=0
-displayEdge=false
-notDeletabled=true
-source=0
-source_properties_id=30
-
-Connector
-#
-#Mon Aug 28 14:32:17 EDT 2017
-Name=connector_-11316397
-dest_properties_id=25
-destination=2
-displayEdge=false
-notDeletabled=false
-source=1
-source_properties_id=24
+source_properties_id=14
 
 
