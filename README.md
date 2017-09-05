@@ -80,11 +80,16 @@ Save your workflow
 ### Run it
 You can run it on local or on Mammouth parallèle II. \
 https://wiki.calculquebec.ca/w/Mp2/en \
-It's not yet tested on other Calcul Québec Clusters. \
-You need a private / public key to use it: \
+It's not yet tested on other Calcul Québec Clusters.
+
+You need a private / public key to use it this way: \
 https://wiki.calculquebec.ca/w/G%C3%A9n%C3%A9rer_des_cl%C3%A9s_SSH/en \
 More information here: \
 https://wiki.calculquebec.ca/w/Connexion_%C3%A0_l%27aide_des_cl%C3%A9s_publiques_et_priv%C3%A9es/en
+
+Then chose cluster on the top right. \
+In the Cluster box (top left of workflow design), add needed information. \
+Update them and then clic on "Test and Save" to presaved your connexion
 
 Enjoy.
 
